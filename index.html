@@ -3,14 +3,15 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="styles.css">
             <title>Reservia</title>
         </head>
         <body>
             <header>
-                <p><img id="ensseigne"src="image site\Projet 2 - Reservia\images\logo\Reservia@3xredimensionné.png" alt="ensseigne reservia"></p>
-                <nav>
-                    <a href="">s'inscrire</a>
-                    <a href="">hebergement</a>
+                <div class="hightPage"><img id="ensseigne"src="image site\Projet 2 - Reservia\images\logo\Reservia@3xredimensionné.png" alt="ensseigne reservia"> <a href="">s'inscrire</a> </div>
+                <nav class="anchorsHight">
+                    
+                    <a href=""id='select' class="active">hebergement</a>
                     <a href="">activités</a>
                     
                 </nav>
@@ -21,12 +22,17 @@
                 <div>
                     <img><input><button>rechercher</button>
                 </div>
-                <ul><p>Filtres</p>
-                    <li>Economique</li>
-                    <li>Familial</li>
-                    <li>Romantique</li>
-                    <li>Annimaux autorisés</li>
-                </ul>
+                <div class="filterContainer">
+                    <h3 class="filter">Filtres</h3>
+                    
+                    <a class="filter" href="">Economique</a>
+                    <p class="filterLogo"><img src="image site\Projet 2 - Reservia\images\logo\child-solid.svg" alt="icone bonhomme"><a class="filter" href=""></i>Familial</a></p>   
+                    <a class="filter" href="">Romantique</a>  
+                    <a class="filter" href="">Annimaux autorisés </a> 
+                        
+                </div>      
+                     
+                
             </header>
             <section>
                 <h2>hérgement à Marseille</h2>
