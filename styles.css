@@ -1,6 +1,15 @@
-
+@font-face{
+    font-family: Raleway;
+    src: url('Font/static/Raleway-Bold.ttf') format('ttf');
+}
 @media screen and (max-width:500px)
 {   
+    body{
+        padding: 15px;
+        text-align: center;
+        font-family: Raleway;
+
+    }
     h1
     { 
         width: 100%;
