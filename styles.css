@@ -5,20 +5,33 @@
 @media screen and (max-width:500px)
 {   
     body{
+        display: block;
+        align-items: center;
         padding: 15px;
         text-align: center;
         font-family: Raleway;
 
     }
+    .select{
+        text-decoration: underline blue;
+        text-underline-position: under;
+        width: 50%;
+    }
     h1
     { 
         width: 100%;
-        margin-bottom: 3px;   
+        margin-bottom: 3px; 
+        font-size: 1.5em;  
+        text-align:left ;
+        font-weight: bold ;
     }
-    ul{
-        display: flex;
-        flex-direction: column;
-        
+    .h1{
+       
+
+    }
+   
+    .filterContainer{
+        border: solid black 1px;
     }
     .filter{
        
@@ -33,6 +46,10 @@
         padding-top:1rem;
     
     }
+    .filterImages{
+        max-width: 40%;
+        height: auto;
+    }
     .hightPage{
     display: flex;
     justify-content: space-between;
@@ -46,18 +63,29 @@
         
     }
 
+    .carte{
+        width: 90%;
 
+    }
+    .carteImage{
+        max-width: 100%;
+        max-height: auto;
+    }
+    .cart + p{
+        width: 100%;
+        
+    }
 
 }
+
+/* fin de mediaquery max size 500*/
 
 .hightPage a{
     color: blue;
     text-decoration: none;
     font-size:1.5rem;
 }
-a:active{
-    text-decoration: underline blue;
-}
+
 .anchorsHight a {
     color: blue;
     text-decoration: none;
