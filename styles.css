@@ -1,23 +1,50 @@
-
-*{
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+body{
+     font-family: 'Raleway';
 }
+
 @media screen and (max-width:500px)
 {   
     body{
         display: block;
         align-items: center;
-        padding: 15px;
+        padding: 10%;
         text-align: center;
         
 
+    
     }
-    .select{
-        text-decoration: underline blue;
-        text-underline-position: under;
-        width: 50%;
+   .hightPage a {
+        display: flex;
+        align-items: center;
+        width: 100px;
+        height: 46px;
+        font-size:1rem;
+        color:#0065FC;
+        text-decoration: none   
     }
+   
+
+    .hightPage{
+        display: flex;
+        justify-content: space-between;
+        
+        width: 100%;
+       font-weight: bold;
+       
+    }
+
+    .anchorsHight{
+        margin: 30px 15px;
+        display:flex;
+        justify-content:  space-around;
+
+    }
+
+    a#activity{
+        color: black;
+        font-weight: 500;
+    }
+
     h1
     { 
         width: 100%;
@@ -26,6 +53,7 @@
         text-align:left ;
         font-weight: bold ;
     }
+
     .butonImage{
         display: block;
     }
@@ -33,7 +61,13 @@
     .filterLogo{
         border: solid black 1px;
         margin: 10px;
+        display: inline-block;
+        justify-content: space-around;
+        width: 25%;  
+        height: auto;
+        border-radius: 40px;
     }
+   
     div h3{
         text-align: left;
     }
@@ -55,53 +89,56 @@
         border-radius: 100% ;
         border-style: ridge;
     }
-    .hightPage{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 10px;
-    }
+    
+    
 
-    .anchorsHight {
-        display:flex;
-        justify-content:  space-around;
-        
+    
+    article.carte{
+        border: 1px white;
+        border-radius: 20px;
+        border-image: auto;
     }
-
     .carte{
         width: 90%;
+        background-color: #F2F2F2;
+        margin-bottom: 20px;
+        
 
     }
     .carteImage{
-        max-width: 100%;
-        max-height: auto;
+        max-width: 30%;
+        max-height: 100%;
+        border: white 1px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
     }
     .cart + p{
         width: 100%;
         
     }
-
+    footer{
+    text-align: left;
+    
+    }
 }
 
 /* fin de mediaquery max size 500*/
+@media screen and (min-width:500){
 
-body{
-     font-family: 'Raleway';
-}
 
-.hightPage a{
-    color: blue;
+.hightPage a {
+    color:#0065FC;
     text-decoration: none;
-    font-size:1.5rem;
+    font-size:1rem;
 }
 
 .anchorsHight a {
-    color: blue;
+    color: #0065FC;
     text-decoration: none;
 
 }
 button{
-    background-color: rgb(39, 61, 253);
+    background-color: #0065FC;
 }
 .butonImage{
     display: none;
@@ -121,7 +158,5 @@ button{
 .filterLogo:hover{
     box-shadow: rgba(0,0,0,0.2) 3px 3px;
 }
-footer{
-    text-align: left;
-    
+
 }

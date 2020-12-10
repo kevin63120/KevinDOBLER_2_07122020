@@ -5,22 +5,24 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="preconnect" href="https://fonts.gstatic.com">
             <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,740;1,800&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="styles.css">
             
             <title>Reservia</title>
         </head>
         <body>
             <header>
-                <div class="hightPage"><img id="ensseigne"src="image site\Projet 2 - Reservia\images\logo\Reservia@3xredimensionné.png" alt="ensseigne reservia"> <a href="">S'inscrire</a> </div>
+                <nav class="hightPage"><img id="ensseigne"src="image site\Projet 2 - Reservia\images\logo\Reservia@3xredimensionné.png" alt="ensseigne reservia"> <a href="">S'inscrire</a> </nav>
                 <nav class="anchorsHight">
                     
                     <a href="#hebergements"class='select' >Hébergements</a>
-                    <a href="#activités"class='select'>Activités</a>
+                    <a href="#activités"class='select' id="activity">Activités</a>
                     
                 </nav>
                 <div class="h1">
                     <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-                    <p>En plein centre ville ou en pleine nature.</p>
+                    <p id="sousTitre">En plein centre ville ou en pleine nature.</p>
                 </div>
                 <form method="GET" action="">
                     <label for="recherche" ></label>
@@ -53,24 +55,24 @@
 
                     <article class="carte"><a href=""><img src="image site\Projet 2 - Reservia\images\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class='carteImage' alt="vue d'une chambre avec lit"><h3>Auberge le panier</h3><p>Nuit à partir de 23€</p></a></article>
 
-                    <article class="cart"><a href=""><img src="image site\Projet 2 - Reservia\images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class='carteImage' alt="vue d'une chambre avec lit"><h3>Hôtel de chez Amina</h3><p>Nuit à partir de 96€</p></a></article>
+                    <article class="carte"><a href=""><img src="image site\Projet 2 - Reservia\images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class='carteImage' alt="vue d'une chambre avec lit"><h3>Hôtel de chez Amina</h3><p>Nuit à partir de 96€</p></a></article>
                 
             </section>
             <section id="mostPopular">
                 <h2>Les plus populaires</h2>
-                <article class="cart"><a href=""><img src="image site\Projet 2 - Reservia\images\hebergements\4_small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class='carteImage' alt="vue d'une chambre avec lit"><h3>Hôtel le soleil du matin</h3><p>Nuit à partir de 128€</p></a></article>
-                <article class="cart"><a href=""><img src="image site\Projet 2 - Reservia\images\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg" class='carteImage' alt="vue d'une chambre avec lit"><h3>Au coeur de l'eau chambre d'hôtes</h3><p>Nuit à partir de 71€</p></a></article>
-                <article class="cart"><a href=""><img src="image site\Projet 2 - Reservia\images\hebergements\4_small\febrian-zakaria-sjvU0THccQA-unsplash.jpg" class='carteImage' alt="vue d'une chambre avec lit"><h3>Hôtel tout bleu et blanc</h3><p>Nuit à partir de 68€</p></a></article>
+                <article class="carte"><a href=""><img src="image site\Projet 2 - Reservia\images\hebergements\4_small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class='carteImage' alt="vue d'une chambre avec lit"><h3>Hôtel le soleil du matin</h3><p>Nuit à partir de 128€</p></a></article>
+                <article class="carte"><a href=""><img src="image site\Projet 2 - Reservia\images\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg" class='carteImage' alt="vue d'une chambre avec lit"><h3>Au coeur de l'eau chambre d'hôtes</h3><p>Nuit à partir de 71€</p></a></article>
+                <article class="carte"><a href=""><img src="image site\Projet 2 - Reservia\images\hebergements\4_small\febrian-zakaria-sjvU0THccQA-unsplash.jpg" class='carteImage' alt="vue d'une chambre avec lit"><h3>Hôtel tout bleu et blanc</h3><p>Nuit à partir de 68€</p></a></article>
                 
             </section>
             <section>
-                <h2 id="activityIn">activités à Marseille</h2>
-                <article class="cart"><a href=""><img src="image site\Projet 2 - Reservia\images\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class='carteImage' alt="vue d'une chambre avec lit"><h3>Vieux Port</h3></a></article>
-                <article class="cart"><a href=""><img src="image site\Projet 2 - Reservia\images\activites\4_small\paul-hermann-QFTrLdQIRhI-unsplash.jpg" class='carteImage' alt="vue d'une chambre avec lit"><h3>Fort de Pomegues</h3></a></article>
-                <article class="cart"><a href=""><img src="image site\Projet 2 - Reservia\images\activites\4_small\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" class='carteImage' alt="vue d'une chambre avec lit"><h3>Iles du Frioul</h3></a></article>
-                <article class="cart"><a href=""><img src="image site\Projet 2 - Reservia\images\activites\4_small\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class='carteImage' alt="vue d'une chambre avec lit"><h3>Parc National des Calanques</h3></a></article>
-                <article class="cart"><a href=""><img src="image site\Projet 2 - Reservia\images\activites\4_small\florian-wehde-xW9e8gdotxI-unsplash.jpg" class='carteImage' alt="vue d'une chambre avec lit"><h3>Notre-Dame-de-la-Garde </h3></a></article>
-                <article class="cart"><a href=""><img src="image site\Projet 2 - Reservia\images\activites\4_small\lena-paulin-wH2-EJoDcV0-unsplash.jpg" class='carteImage' alt="vue d'une chambre avec lit"><h3>Parc Lonchamp</h3></a></article>
+                <h2 id="activités">activités à Marseille</h2>
+                <article class="carte"><a href=""><img src="image site\Projet 2 - Reservia\images\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class='carteImage' alt="vue d'une chambre avec lit"><h3>Vieux Port</h3></a></article>
+                <article class="carte"><a href=""><img src="image site\Projet 2 - Reservia\images\activites\4_small\paul-hermann-QFTrLdQIRhI-unsplash.jpg" class='carteImage' alt="vue d'une chambre avec lit"><h3>Fort de Pomegues</h3></a></article>
+                <article class="carte"><a href=""><img src="image site\Projet 2 - Reservia\images\activites\4_small\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" class='carteImage' alt="vue d'une chambre avec lit"><h3>Iles du Frioul</h3></a></article>
+                <article class="carte"><a href=""><img src="image site\Projet 2 - Reservia\images\activites\4_small\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class='carteImage' alt="vue d'une chambre avec lit"><h3>Parc National des Calanques</h3></a></article>
+                <article class="carte"><a href=""><img src="image site\Projet 2 - Reservia\images\activites\4_small\florian-wehde-xW9e8gdotxI-unsplash.jpg" class='carteImage' alt="vue d'une chambre avec lit"><h3>Notre-Dame-de-la-Garde </h3></a></article>
+                <article class="carte"><a href=""><img src="image site\Projet 2 - Reservia\images\activites\4_small\lena-paulin-wH2-EJoDcV0-unsplash.jpg" class='carteImage' alt="vue d'une chambre avec lit"><h3>Parc Lonchamp</h3></a></article>
 
             </section>
             <footer>
