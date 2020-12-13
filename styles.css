@@ -107,6 +107,9 @@ div h3 {
     border-radius: 100%;
     border-style: ridge;
 }
+#mostPopular{
+    background-color:#f2f2f2 ;
+}
 
 article h3 {
     font-size: smaller;
@@ -152,6 +155,22 @@ article.carte {
 }
 footer {
     text-align: left;
+    background-color:#f2f2f2;
+    width: 140%;
+}
+.footerSection{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start ;
+}
+.footerSection h2 {
+    margin-top: 2rem;
+}
+
+.footerSection a{
+    text-decoration: none;
+    color: black;
+    margin-top: 1rem;
 }
 
 /* fin de mediaquery max size 500*/
