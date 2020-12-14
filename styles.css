@@ -1,10 +1,15 @@
 
 body {
-    display: block;
-    align-items: center;
-    padding: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    
     text-align: center;
     font-family: "Raleway";
+}
+header{
+    padding: 10%;
 }
 .hightPage a {
     display: flex;
@@ -53,27 +58,39 @@ h1 {
     font-size: 0.9em;
 }
 input{
-    border: none;
+    border: none; 
+    width: 100%;
+    height: auto%;
+}
+
+label{
+    
+   
 }
 .inputContainer{
-    display: inline-block;
-    text-align: flex-end;
-    border: solid black 2px;
-    border-radius:20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+   border: rgba(0,0,0,0.3) 0.5px solid;
+   border-right: none;
+    
+    
+    border-radius: 20px;
     width: 100%;
 }
 button{
-    height: 40px;
-    width: 40px;
-    border-radius: 25px;
-    border: black solid;
-
+    padding: 5px;
+    text-decoration: none;
+    border: 6px solid  #0065fc;
+    border-radius: 10px;
+    background-color: #0065fc ;
+}
+.butonImage img{
+    color: white;
 }
 .butonImage {
     display: block;
-    width: 15px;
-
-    
+    width: 15px;   
 }
 #recherche{
     display: none;
@@ -107,8 +124,12 @@ div h3 {
     border-radius: 100%;
     border-style: ridge;
 }
+#mostPopular, #hebergement , #activites , footer{
+    padding: 10%;
+}
 #mostPopular{
     background-color:#f2f2f2 ;
+    
 }
 
 article h3 {
@@ -156,7 +177,7 @@ article.carte {
 footer {
     text-align: left;
     background-color:#f2f2f2;
-    width: 140%;
+    width: 100%;
 }
 .footerSection{
     display: flex;
@@ -174,8 +195,123 @@ footer {
 }
 
 /* fin de mediaquery max size 500*/
-@media screen and (min-width: 500) {
-    .butonImage {
-        display: none;
+
+@media screen and (min-width: 500px) {
+    body{
+        width: 100%;     
+    }
+    
+    .hightPage{
+        max-width:30% ;
+    }
+    .hightPage a {
+        width: 30%;
+    }
+    img.butonImage {
+        display:none;
+    }
+    #recherhe{
+        display: block;
+    }
+    .filterContainer{
+        display: flex;
+        justify-content: start;
+
+    }
+    .filter{
+        width: auto;
+        margin-top:auto;
+        padding: 0;
+    }
+    .filterLogo{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .filterLogo img{
+        width: 10%;
+        
+    }
+    .carteContainer{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .carte {
+        width: 30%;
+        height: auto;
+        padding:1%;
+        
+    
+        margin-bottom: 20px;
+        background-color: white;
+    
+        box-shadow: #f2f2f2 5px 5px 10px 5px;
+    }
+    .carteImage {
+        object-fit: cover;
+        width: 100%;
+        height: 60%;
+    
+        border: white 1px;
+    
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 0;
+         
+
+    }
+    .containerHebergement{
+        display: flex;
+        
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+    #hebergement{
+       display: flex;
+       align-items: space-around;
+        width: 60%;
+        
+        background-color: #f2f2f2 ;
+        padding: 0;
+        
+    }
+    #hebergement .carte{
+        height: 40%;
+    }
+    #mostPopular{
+        display: flex;
+        flex-direction: column;
+        padding:0;
+        width: 20%;
+
+       
+        
+        
+    }
+    #mostPopular  .carteContainer{
+        display: flex;
+        flex-direction:column ;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    #mostPopular .carteContainer .carte{
+        width: 80%;
+    }
+     
+    footer{
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        padding-top: 2%;
+        padding-bottom: 1%;
     }
 }
