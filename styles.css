@@ -1,14 +1,13 @@
-
 body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;  
-    
+    justify-content: center;
+
     text-align: center;
     font-family: "Raleway";
 }
-header{
+header {
     padding: 10%;
 }
 .hightPage a {
@@ -39,11 +38,9 @@ a#activity {
     color: black;
     font-weight: 500;
 }
-a.select{
+a.select {
     color: #0065fc;
     text-decoration-line: underline;
-    
-    
 }
 
 h1 {
@@ -53,108 +50,104 @@ h1 {
     text-align: left;
     font-weight: bold;
 }
-#sousTitre{
+#sousTitre {
     text-align: start;
     font-size: 0.9em;
 }
-input{
-    border: none; 
+input {
+    border: none;
     width: 100%;
     height: auto;
 }
 
-
-.inputContainer{
+.inputContainer {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-   border: rgba(0,0,0,0.3) 0.5px solid;
-   border-right: none;
-    
-    
+    border: rgba(0, 0, 0, 0.3) 0.5px solid;
+    border-right: none;
+
     border-radius: 20px;
-    
 }
-button{
+button {
     padding: 5px;
     text-decoration: none;
-    border: 6px solid  #DEEBFF ;
+    border: 6px solid #0065fc;
     border-radius: 10px;
-    background-color: #DEEBFF  ;
+    background-color: #0065fc;
 }
-.butonImage img{
+.butonImage img {
     color: white;
 }
 .butonImage {
     display: block;
     width: 15px;
-    height: 15px;   
+    height: 15px;
 }
-#recherche{
+#recherche {
     display: none;
 }
 
 .filterLogo {
     display: block;
-    border: solid #DEEBFF  6px; 
-    border-left: solid #DEEBFF 5px;
-    background-color: #DEEBFF ; 
+    border: solid #deebff 6px;
+    border-left: solid #deebff 5px;
+    background-color: #deebff;
     width: 20px;
     padding: 8px;
-    height: 50px; 
+    height: 50px;
     height: auto;
     border-radius: 50%;
     position: relative;
     right: 11%;
-    
 }
 
-#heart{
+#heart {
     width: 20px;
-    padding: 8px
-
+    padding: 8px;
 }
-#childImage{
+#childImage {
     width: 20px;
     height: 20px;
     right: 13%;
-    
-    
 }
 div h3 {
     text-align: left;
 }
-.filter{
-    text-align:left ;
+.filter {
+    text-align: left;
 }
-.filterContainer{
+.filterContainer {
     display: flex;
     flex-wrap: wrap;
-    
-    
 }
-.labelFiltre{
-    display: flex;   
+.labelFiltre {
+    display: flex;
     align-items: center;
-    max-width: 160px ;
+    max-width: 160px;
     height: 50px;
     margin-bottom: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
     background-color: white;
-    border: black 1px solid;
+    border: rgba(0, 0, 0, 0.096) 1px solid;
     border-left: none;
     font-weight: bold;
     height: 40px;
-
+}
+.labelFiltre:hover{
+    background-color:  #81b3fd;
+    box-shadow: rgba(236, 216, 186, 0.904) 4px 4px;
+    border: double blue 4px;
 }
 
-
-#mostPopular, #hebergement , #activites , footer{
+#mostPopular,
+#hebergement,
+#activites,
+footer {
     padding: 10%;
 }
-#mostPopular{
-    background-color:#F2F2F2;
-    
+#mostPopular {
+    background-color: #f2f2f2;
 }
 
 article h3 {
@@ -201,19 +194,19 @@ article.carte {
 }
 footer {
     text-align: left;
-    background-color:#f2f2f2;
+    background-color: #f2f2f2;
     width: 100%;
 }
-.footerSection{
+.footerSection {
     display: flex;
     flex-direction: column;
-    align-items:flex-start ;
+    align-items: flex-start;
 }
 .footerSection h2 {
     margin-top: 2rem;
 }
 
-.footerSection a{
+.footerSection a {
     text-decoration: none;
     color: black;
     margin-top: 1rem;
@@ -222,113 +215,106 @@ footer {
 /* fin de mediaquery max size 500*/
 
 @media screen and (min-width: 500px) {
-    body{
-        width: 100%;     
+    body {
+        width: 100%;
     }
-    
-    .hightPage{
-        max-width:30% ;
+
+    .hightPage {
+        max-width: 30%;
     }
     .hightPage a {
         width: 30%;
     }
     img.butonImage {
-        display:none;
+        display: none;
     }
-    #recherhe{
+    #recherhe {
         display: block;
     }
-    .filterContainer{
+    .filterContainer {
         display: flex;
         justify-content: start;
-
     }
-    .filter{
+    .filter {
         width: auto;
-        margin-top:auto;
+        margin-top: auto;
         padding: 0;
     }
-    .filterLogo{
+    .filterLogo {
         display: flex;
         justify-content: flex-start;
     }
-    .filterLogo img{
+    .filterLogo img {
         width: 10%;
-        
     }
-    .carteContainer{
-         display: flex;
-         flex-direction: row;
-         justify-content: space-around;
+    .carteContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
         flex-wrap: wrap;
     }
     .carte {
         width: 30%;
         height: auto;
-        padding:1%;
-        
-    
+        padding: 1%;
+
         margin-bottom: 20px;
         background-color: white;
-    
+
         box-shadow: #f2f2f2 5px 5px 10px 5px;
     }
     .carteImage {
         object-fit: cover;
         width: 100%;
         height: 60%;
-    
+
         border: white 1px;
-    
+
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
     }
-   
-    section{
+
+    section {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         flex-wrap: wrap;
         padding: 0;
-         
-
     }
-    .containerHebergement{
+    .containerHebergement {
         display: flex;
-        
+
         flex-direction: row;
         justify-content: space-around;
-        
     }
-    #hebergement{
-       display: flex;
-       align-items: space-around;
+    #hebergement {
+        display: flex;
+        align-items: space-around;
         width: 60%;
         padding: 0;
-        background-color: #F2F2F2;
-        
+        background-color: #f2f2f2;
     }
-    #hebergement .carte{
+    #hebergement .carte {
         height: 40%;
     }
-    #mostPopular{
+    #mostPopular {
         display: flex;
         flex-direction: column;
-        padding:0;
-        width: 20%;    
+        padding: 0;
+        width: 20%;
     }
-    #mostPopular  .carteContainer{
+    #mostPopular .carteContainer {
         display: flex;
-        flex-direction:column ;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 100%;
     }
-    #mostPopular .carteContainer .carte{
+    #mostPopular .carteContainer .carte {
         width: 80%;
     }
-     
-    footer{
+
+    footer {
         display: flex;
         justify-content: space-around;
         padding: 0;
