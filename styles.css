@@ -10,6 +10,9 @@ body {
 header {
     padding: 10%;
 }
+.navDesktop{
+    display: none;
+}
 .hightPage a {
     display: flex;
     align-items: center;
@@ -19,7 +22,9 @@ header {
     color: #0065fc;
     text-decoration: none;
 }
-
+a{
+    text-decoration: none;
+}
 .hightPage {
     display: flex;
     justify-content: space-between;
@@ -29,30 +34,36 @@ header {
 }
 
 .anchorsHight {
-    margin: 30px 15px;
+    height: 30px;
     display: flex;
     justify-content: space-around;
+    margin-bottom:2rem ;
+    margin-top:1.5rem;
+    
+
 }
 
 a#activity {
     color: black;
     font-weight: 500;
+    border-bottom: rgba(0, 0, 0, 0.329) 2px solid;
 }
 a.select {
     color: #0065fc;
-    text-decoration-line: underline;
+    border-bottom: #0065fc 2px solid;
+    width: 50%;
 }
 
 h1 {
     width: 100%;
     margin-bottom: 3px;
-    font-size: 1.25em;
+    font-size: 1.3rem;
     text-align: left;
     font-weight: bold;
 }
 #sousTitre {
     text-align: start;
-    font-size: 0.9em;
+    font-size: 1rem;
 }
 input {
     border: none;
@@ -66,14 +77,29 @@ input {
     align-items: center;
     border: rgba(0, 0, 0, 0.3) 0.5px solid;
     border-right: none;
-
     border-radius: 20px;
+    height: 45px;
+    margin-top: 35px;
+    margin-bottom:35px
+
 }
 button {
     padding: 5px;
     text-decoration: none;
     border: 6px solid #0065fc;
     border-radius: 10px;
+    background-color: #0065fc;
+   
+    
+}
+.buttonRecherche{
+     height: 46px;
+    width: 46px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid #0065fc;
+    border-radius: 15px;
     background-color: #0065fc;
 }
 .butonImage img {
@@ -93,22 +119,22 @@ button {
     border: solid #deebff 6px;
     border-left: solid #deebff 5px;
     background-color: #deebff;
-    width: 20px;
+    width: 25px;
     padding: 8px;
-    height: 50px;
-    height: auto;
+    height: 25px;
+    
     border-radius: 50%;
     position: relative;
     right: 11%;
 }
 
 #heart {
-    width: 20px;
+    width: 25px;
     padding: 8px;
 }
 #childImage {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     right: 13%;
 }
 div h3 {
@@ -129,10 +155,11 @@ div h3 {
     margin-bottom: 10px;
     margin-right: 20px;
     background-color: white;
-    border: rgba(0, 0, 0, 0.096) 1px solid;
+    border: rgba(0, 0, 0, 0.196) 2px solid;
     border-left: none;
     font-weight: bold;
-    height: 40px;
+    border-radius: 50px;
+    
 }
 .labelFiltre:hover{
     background-color:  #81b3fd;
@@ -212,11 +239,17 @@ footer {
     margin-top: 1rem;
 }
 
-/* fin de mediaquery max size 500*/
+/* debut de mediaquery  min-size 700*/
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 700px) {
     body {
         width: 100%;
+    }
+    .navDesktop{
+        display: block;
+    }
+    .select{
+        display: none;
     }
 
     .hightPage {
