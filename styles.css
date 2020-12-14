@@ -80,11 +80,10 @@ button{
 }
 
 .filterLogo {
+    display: block;
     border: solid black 1px;
-    margin: 10px;
-    display: inline-block;
-    justify-content: space-around;
-    width: 25%;
+    margin: 10px;    
+    width: auto;
     height: auto;
     border-radius: 40px;
 }
@@ -100,8 +99,9 @@ div h3 {
     padding-top: 1rem;
 }
 .filterImages {
-    max-width: 60%;
-    height: auto;
+    object-fit: cover;
+    max-width: 30px;
+    
     margin-right: 5px;
     border: solid blue 1px;
     border-radius: 100%;
