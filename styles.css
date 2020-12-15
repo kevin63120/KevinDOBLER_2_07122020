@@ -1,14 +1,16 @@
-body {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
 
-      text-align: center;
+
+body {
+      
+
+     
       font-family: "Raleway";
 }
+/******
+header
+******/
 header {
-      padding: 10%;
+      padding: 0%;
 }
 .navDesktop{
     display: none;
@@ -33,7 +35,8 @@ a{
       font-weight: bold;
 }
 
-.anchorsHight {
+#navMobile {
+    text-align: center;
     height: 30px;
     display: flex;
     justify-content: space-around;
@@ -65,17 +68,14 @@ h1 {
     text-align: start;
     font-size: 1rem;
 }
-input {
-      border: none;
-      width: 100%;
-      height: auto;
-}
 
 .inputContainer {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 465px ;
     align-items: center;
-    border: rgba(0, 0, 0, 0.3) 0.5px solid;
+    border: #deebff 0.5px solid;
     border-right: none;
     border-radius: 20px;
     height: 45px;
@@ -83,8 +83,36 @@ input {
     margin-bottom:35px
 
 }
+.pointeurContainer{
+      display: flex;
+      background-color: #deebff;
+      width: 70px;
+      height: 46px;
+      border: solid  #deebff 1px;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      position: relative;
+      left: 0px;
+     justify-content: center;
+      align-items: center;
+}
+#pointeur{
+      width: 15px;
+      
+     
+
+}
+
+input {
+      border: none;
+      width: 100%;
+      height: auto;
+}
+
+
 button {
-    padding: 5px;
+      
+    
     text-decoration: none;
     border: 6px solid #0065fc;
     border-radius: 10px;
@@ -93,18 +121,19 @@ button {
     
 }
 .buttonRecherche{
-     height: 46px;
-    width: 46px;
+      
+     height: 48px;
+    width: 55px;
     display:flex;
     justify-content: center;
     align-items: center;
     border: 6px solid #0065fc;
     border-radius: 15px;
     background-color: #0065fc;
+    font-family: 'Raleway';
+    
 }
-.butonImage img {
-      color: white;
-}
+
 .butonImage {
       display: block;
       width: 15px;
@@ -119,22 +148,25 @@ button {
     border: solid #deebff 6px;
     border-left: solid #deebff 5px;
     background-color: #deebff;
-    width: 25px;
+    width: 22px;
     padding: 8px;
-    height: 25px;
+    height: 22px;
     
     border-radius: 50%;
     position: relative;
     right: 11%;
 }
+.filtreTxt{
+    font-weight: 740;
+}
 
 #heart {
-    width: 25px;
+    width: 22px;
     padding: 8px;
 }
 #childImage {
-    width: 25px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
     right: 13%;
 }
 div h3 {
@@ -154,6 +186,7 @@ div h3 {
     height: 50px;
     margin-bottom: 10px;
     margin-right: 20px;
+    margin-left: 10px;
     background-color: white;
     border: rgba(0, 0, 0, 0.196) 2px solid;
     border-left: none;
@@ -161,11 +194,19 @@ div h3 {
     border-radius: 50px;
     
 }
-.labelFiltre:hover{
-    background-color:  #81b3fd;
-    box-shadow: rgba(236, 216, 186, 0.904) 4px 4px;
-    border: double blue 4px;
+.infoImage{
+    width:5px;
+    margin-right: 20px;
+    
 }
+
+/***************
+
+
+CARTES 
+
+
+****************/
 
 #mostPopular,
 #hebergement,
@@ -177,11 +218,22 @@ footer {
       background-color: #f2f2f2;
 }
 
-article h3 {
-      font-size: smaller;
+.titleMost{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+.mostLogo {
+      width: 25px;
+      height: 15px;
 }
 
-article.carte {
+
+article h3 {
+      font-size: medium;
+}
+
+.carte {
       border: 1px white;
       border-radius: 20px;
       border-image: auto;
@@ -219,6 +271,18 @@ article.carte {
 .cart + p {
       width: 100%;
 }
+
+
+/*************
+
+
+
+FOOTER
+
+
+*************/
+
+
 footer {
       text-align: left;
       background-color: #f2f2f2;
@@ -242,161 +306,26 @@ footer {
 /* debut de mediaquery  min-size 700*/
 
 @media screen and (min-width: 700px) {
-    body {
-        width: 100%;
-    }
-    .navDesktop{
-        display: block;
-    }
-    .select{
+     /***********
+     HEADER Desktop
+     *********/
+    header{
+            padding: 1rem;
+        }
+
+    #navMobile {
         display: none;
     }
-
-    .hightPage {
-        max-width: 30%;
-    }
-    .hightPage a {
-        width: 30%;
-    }
-    img.butonImage {
-        display: none;
-    }
-    #recherhe {
-        display: block;
-    }
-    .filterContainer {
+    #navDesktop{
         display: flex;
-        justify-content: start;
     }
-    .filter {
-        width: auto;
-        margin-top: auto;
-        padding: 0;
-    }
-    .filterLogo {
-        display: flex;
-        justify-content: flex-start;
-    }
-    .filterLogo img {
-        width: 10%;
-    }
-    .carteContainer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    .carte {
-        width: 30%;
-        height: auto;
-        padding: 1%;}
+    
 
-      .hightPage {
-            max-width: 30%;
-      }
-      .hightPage a {
-            width: 30%;
-      }
-      img.butonImage {
-            display: none;
-      }
-      #recherche {
-            display: block;
-      }
-      .filterContainer {
-            display: flex;
-            justify-content: start;
-      }
-      .filter {
-            width: auto;
-            margin-top: auto;
-            padding: 0;
-      }
-      .filterLogo {
-            display: flex;
-            justify-content: flex-start;
-      }
-      .filterLogo img {
-            width: 10%;
-      }
-      .carteContainer {
-            display: flex;
-            flex-direction: row; 
-            flex-wrap: wrap;
-      }
-      .carte {
-            background-color: white;
-            box-shadow: #f2f2f2 5px 5px 10px 5px;
-      }
-
-      .carteImage {
-            object-fit: cover;
-
-            border: white 1px;
-            border-top-right-radius: 20px;
-            border-top-left-radius: 20px;
-      }
-
-      section {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            padding: 0;
-      }
-      .containerHebergement {
-            display: flex;
-            border: red 2px solid;
-            border-radius: 25px;
-            height: 650px;
-            flex-direction: row;
-            justify-content: space-evenly;
-            width: 80%;
-      }
-      h2 {
-            text-align: left;
-      }
-      #hebergement {
-            display: flex;
-            align-items: space-around;
-            width: 60%;
-            padding: 02%;
-            background-color: #f2f2f2;
-      }
-
-      #hebergement .carte {
-            width: 150px;
-            height: 200px;
-            margin: 15px;
-            padding: 5px;
-      }
-      .mostContainer {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: red;
-            width: 250px;
-      }
-      #mostPopular {
-            align-items: center;
-            padding: 0%;
-            width: 25%;
-      }
-      .mostPopularContainer {
-            display: flex;
-      }
-
-      #activites {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-      }
-
-      footer {
+    footer {
             display: flex;
             justify-content: space-around;
             padding: 0;
             padding-top: 2%;
             padding-bottom: 1%;
-      }
+        }
 }
