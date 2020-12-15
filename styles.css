@@ -10,6 +10,9 @@ body {
 header {
       padding: 10%;
 }
+.navDesktop{
+    display: none;
+}
 .hightPage a {
       display: flex;
       align-items: center;
@@ -19,7 +22,9 @@ header {
       color: #0065fc;
       text-decoration: none;
 }
-
+a{
+    text-decoration: none;
+}
 .hightPage {
       display: flex;
       justify-content: space-between;
@@ -29,36 +34,36 @@ header {
 }
 
 .anchorsHight {
-      margin: 30px 15px;
-      display: flex;
-      justify-content: space-around;
-}
-.select {
-      border-bottom: blue 2px solid;
-      height: 30px;
-      width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom:2rem ;
+    margin-top:1.5rem;
+    
+
 }
 
 a#activity {
-      color: black;
-      font-weight: 500;
-      border-bottom: rgba(0, 0, 0, 0.082) 2px solid;
+    color: black;
+    font-weight: 500;
+    border-bottom: rgba(0, 0, 0, 0.329) 2px solid;
 }
 a.select {
-      color: #0065fc;
-      text-decoration: none;
+    color: #0065fc;
+    border-bottom: #0065fc 2px solid;
+    width: 50%;
 }
 
 h1 {
-      width: 100%;
-      margin-bottom: 3px;
-      font-size: 1.25em;
-      text-align: left;
-      font-weight: bold;
+    width: 100%;
+    margin-bottom: 3px;
+    font-size: 1.3rem;
+    text-align: left;
+    font-weight: bold;
 }
 #sousTitre {
-      text-align: start;
-      font-size: 0.9em;
+    text-align: start;
+    font-size: 1rem;
 }
 input {
       border: none;
@@ -67,20 +72,35 @@ input {
 }
 
 .inputContainer {
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: center;
-      border: rgba(0, 0, 0, 0.3) 0.5px solid;
-      border-right: none;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    border: rgba(0, 0, 0, 0.3) 0.5px solid;
+    border-right: none;
+    border-radius: 20px;
+    height: 45px;
+    margin-top: 35px;
+    margin-bottom:35px
 
-      border-radius: 20px;
 }
 button {
-      padding: 5px;
-      text-decoration: none;
-      border: 6px solid #0065fc;
-      border-radius: 10px;
-      background-color: #0065fc;
+    padding: 5px;
+    text-decoration: none;
+    border: 6px solid #0065fc;
+    border-radius: 10px;
+    background-color: #0065fc;
+   
+    
+}
+.buttonRecherche{
+     height: 46px;
+    width: 46px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid #0065fc;
+    border-radius: 15px;
+    background-color: #0065fc;
 }
 .butonImage img {
       color: white;
@@ -95,27 +115,27 @@ button {
 }
 
 .filterLogo {
-      display: block;
-      border: solid #deebff 6px;
-      border-left: solid #deebff 5px;
-      background-color: #deebff;
-      width: 20px;
-      padding: 8px;
-      height: 50px;
-      height: auto;
-      border-radius: 50%;
-      position: relative;
-      right: 11%;
+    display: block;
+    border: solid #deebff 6px;
+    border-left: solid #deebff 5px;
+    background-color: #deebff;
+    width: 25px;
+    padding: 8px;
+    height: 25px;
+    
+    border-radius: 50%;
+    position: relative;
+    right: 11%;
 }
 
 #heart {
-      width: 20px;
-      padding: 8px;
+    width: 25px;
+    padding: 8px;
 }
 #childImage {
-      width: 20px;
-      height: 20px;
-      right: 13%;
+    width: 25px;
+    height: 25px;
+    right: 13%;
 }
 div h3 {
       text-align: left;
@@ -128,22 +148,23 @@ div h3 {
       flex-wrap: wrap;
 }
 .labelFiltre {
-      display: flex;
-      align-items: center;
-      max-width: 160px;
-      height: 50px;
-      margin-bottom: 10px;
-      margin-right: 20px;
-      background-color: white;
-      border: rgba(0, 0, 0, 0.096) 1px solid;
-      border-left: none;
-      font-weight: bold;
-      height: 40px;
+    display: flex;
+    align-items: center;
+    max-width: 160px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    background-color: white;
+    border: rgba(0, 0, 0, 0.196) 2px solid;
+    border-left: none;
+    font-weight: bold;
+    border-radius: 50px;
+    
 }
-.labelFiltre:hover {
-      background-color: #81b3fd;
-      box-shadow: rgba(236, 216, 186, 0.904) 4px 4px;
-      border: double blue 4px;
+.labelFiltre:hover{
+    background-color:  #81b3fd;
+    box-shadow: rgba(236, 216, 186, 0.904) 4px 4px;
+    border: double blue 4px;
 }
 
 #mostPopular,
@@ -218,12 +239,57 @@ footer {
       margin-top: 1rem;
 }
 
-/* fin de mediaquery max size 500*/
+/* debut de mediaquery  min-size 700*/
 
-@media screen and (min-width: 500px) {
-      body {
-            width: 100%;
-      }
+@media screen and (min-width: 700px) {
+    body {
+        width: 100%;
+    }
+    .navDesktop{
+        display: block;
+    }
+    .select{
+        display: none;
+    }
+
+    .hightPage {
+        max-width: 30%;
+    }
+    .hightPage a {
+        width: 30%;
+    }
+    img.butonImage {
+        display: none;
+    }
+    #recherhe {
+        display: block;
+    }
+    .filterContainer {
+        display: flex;
+        justify-content: start;
+    }
+    .filter {
+        width: auto;
+        margin-top: auto;
+        padding: 0;
+    }
+    .filterLogo {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .filterLogo img {
+        width: 10%;
+    }
+    .carteContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .carte {
+        width: 30%;
+        height: auto;
+        padding: 1%;}
 
       .hightPage {
             max-width: 30%;
