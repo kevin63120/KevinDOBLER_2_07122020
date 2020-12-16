@@ -15,6 +15,10 @@ header {
 .navDesktop{
     display: none;
 }
+
+.filterDesktop{
+      display:none;
+}
 .hightPage a {
       display: flex;
       align-items: center;
@@ -75,7 +79,7 @@ h1 {
     justify-content: space-between;
     max-width: 465px ;
     align-items: center;
-    border: f2f2f2 0.5px solid;
+    border: #f2f2f2 0.5px solid;
     border-right: none;
     border-radius: 20px;
     height: 45px;
@@ -162,7 +166,10 @@ box-sizing: content-box;
     right: 11%;
 }
 .filtreTxt{
-    font-weight: 740;
+      margin-right: 10px;
+    font-size: large;  
+    font-family: 'Raleway';
+    font-weight: 800;
     text-align: center;
 }
 #dog{
@@ -422,16 +429,92 @@ footer {
      HEADER Desktop
      *********/
     header{
-            padding: 1rem;
-        }
+           margin:3%;
+           padding:0;
+      }        
 
     #navMobile {
         display: none;
     }
-    #navDesktop{
-        display: flex;
+    a.logInMobile{
+          display: none;
     }
     
+    .butonImage{
+          display: none;
+    }
+    #recherche{
+          display: block;
+    }
+    .hightPage{
+          display: block;
+    }
+    .containerNavDesktop{
+          display: flex;
+          justify-content: flex-start;
+
+    }
+     .hightPage a{
+          width: auto;
+          
+         text-align: center;
+    }
+    .hebergement{
+          color: red;
+          border-top:black 2px solid ;
+    }
+    a#activity{
+          border-bottom: 0;
+    }
+
+   .navDesktop{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
+    .navDesktop2{
+      flex-direction: row;
+      text-align: center;
+      display: flex;
+      width: 400px;
+      justify-content: space-around;
+    }
+    .buttonRecherche{
+          font-family: 'Raleway';
+          width: auto;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          color: white;
+          font-size: 1em;
+          font-weight: bold;
+
+    }
+    .filter{
+          display: none;
+    }
+    .filterDesktop{
+          display: block;
+          text-align: left;
+          margin-right: 5%;
+    }
+    .filterContainer{
+      justify-content: flex-start;
+    }
+    .containerHebergement{
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: center;
+    }
+    .carteContainer{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 60%;
+                    
+    }
+
 
     footer {
             display: flex;
