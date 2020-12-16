@@ -1,4 +1,6 @@
-
+*{
+      box-sizing: border-box;
+}
 
 body {
       margin:0;
@@ -58,7 +60,7 @@ a.select {
 h1 {
     width: 100%;
     margin-bottom: 3px;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     text-align: left;
     font-weight: bold;
 }
@@ -73,7 +75,7 @@ h1 {
     justify-content: space-between;
     max-width: 465px ;
     align-items: center;
-    border: #deebff 0.5px solid;
+    border: f2f2f2 0.5px solid;
     border-right: none;
     border-radius: 20px;
     height: 45px;
@@ -83,10 +85,10 @@ h1 {
 }
 .pointeurContainer{
       display: flex;
-      background-color: #deebff;
+      background-color: #f2f2f2;
       width: 70px;
       height: 46px;
-      border: solid  #deebff 1px;
+      border: solid  #f2f2f2 1px;
       border-top-left-radius: 15px;
       border-bottom-left-radius: 15px;
       position: relative;
@@ -102,9 +104,13 @@ h1 {
 }
 
 input {
+      font-family: 'Raleway';
       border: none;
       width: 100%;
-      height: auto;
+      height: 100%;
+      font-weight: bolder;
+      font-size: 1.2em;
+      text-align: center;
 }
 
 
@@ -142,6 +148,7 @@ button {
 }
 
 .filterLogo {
+box-sizing: content-box;
     display: block;
     border: solid #deebff 6px;
     border-left: solid #deebff 5px;
@@ -157,6 +164,9 @@ button {
 .filtreTxt{
     font-weight: 740;
     text-align: center;
+}
+#dog{
+      right: 10%;
 }
 
 #heart {
@@ -182,11 +192,11 @@ div h3 {
     display: flex;
     align-items: center;
     text-align: center;
-    max-width: 160px;
+    max-width: 200px;
     height: 50px;
     margin-bottom: 10px;
     margin-right: 20px;
-    margin-left: 10px;
+    margin-left: 5px;
     background-color: white;
     border: rgba(0, 0, 0, 0.196) 2px solid;
     border-left: none;
@@ -212,7 +222,7 @@ CARTES
 #hebergement,
 #activites,
 footer {
-      padding:5%
+     padding: 5%;
 }
 article p{
       font-weight: lighter;
@@ -267,7 +277,7 @@ article p{
       font-size: 0.9em;
 }
 .mostStar{
-     margin-top: 35px;
+     margin-top: 18%;
 }
 .mostTxt h3{
       margin-bottom: 0;
@@ -287,6 +297,51 @@ article p{
 
 article h3 {
       font-size: medium;
+}
+.carteHebergement{
+      width: 100%;
+      height: 200px;
+      box-shadow: #f2f2f2 5px 15px 5px;
+      margin-bottom: 12px;
+      border-radius: 20px;
+      border: white 1px solid;
+      
+      
+      
+
+}
+.carteHebergement a{
+      text-decoration: none;
+      color: black;
+}
+.carteImageHebergement{
+      object-fit: cover;
+      width: 100%;
+      height: 60%;
+      border: white 1px;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      padding: 2px;     
+}
+.titleHebergement{
+      margin: 6px;
+      margin-left:10px;
+}
+.HebergementTxt{
+      margin: 6px;
+      margin-left:10px;
+}
+
+.starHebergement{
+      margin-left:10px;
+}
+
+.buttonMore{
+      background-color: white;
+      font-weight: bold;
+      border: none;
+      font-size: 1.2em;
+      margin-top: 20px;
 }
 
 .carte {
@@ -321,15 +376,10 @@ article h3 {
       border: white 1px;
       border-top-right-radius: 20px;
       border-top-left-radius: 20px;
-      margin:2px;
-      
-}
-.carte h3{}
-    
-.carteTxt{
-      
      
+      
 }
+
 .titleActivity{
       margin: 5%;
 }

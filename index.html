@@ -55,7 +55,7 @@
                               En plein centre ville ou en pleine nature.
                         </p>
                   </div>
-                  <form method="GET" action="">
+                  <form method="POST" action="">
                         <div class="inputContainer">
                               <div class="pointeurContainer">
                                     <img
@@ -66,7 +66,7 @@
                               </div>
                               <label for="recherche"></label>
 
-                              <input type="search" name="recherche" /><button
+                              <input type="search" value="Marseille, France"name="recherche" /><button
                                     class="buttonRecherche"
                               >
                                     <img
@@ -126,11 +126,12 @@
                                           <img
                                                 src="image site\Projet 2 - Reservia\images\logo\dog-solid.svg"
                                                 class="filterLogo"
+                                                id="dog"
                                                 alt="image de loupe"
                                           /><span
-                                                id="annimauxDomestiques"
+                                                id="annimaux"
                                                 class="filtreTxt"
-                                                >Annimaux domestiques</span
+                                                >Annimaux autorisés</span
                                           >
                                     </button></label
                               >
@@ -145,216 +146,220 @@
                   </p>
             </header>
             <div class="containerHebergement">
-                  <section id="hebergement">
+                <section id="mostPopular">
+                    <div class="titleMost">
+                          <h2>les plus populaire</h2>
+                          <p class="mostLogo">
+                                <img
+                                      src="image site\Projet 2 - Reservia\images\logo\chart-line-solid.svg"
+                                />
+                          </p>
+                    </div>
+
+                    <div class="carteContainer">
+                          <article>
+                                <a href="#" class="mostPopularContainer"
+                                      ><img
+                                            src="image site\Projet 2 - Reservia\images\hebergements\4_small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                                            class="carteImageMost"
+                                            alt="vue d'une chambre avec lit" />
+                                      <div class="mostTxt">
+                                            <h3>
+                                                  Hôtel le soleil du matin
+                                            </h3>
+                                            <p class="mostNightTxt">
+                                                  Nuit à partir de
+                                                  <strong>128€</strong>
+                                            </p>
+                                            <p class="mostStar">
+                                                  <img
+                                                        src="image site\Projet 2 - Reservia\images\logo\star5- 1.png"
+                                                        class="star"
+                                                        alt="note hébergement"
+                                                  />
+                                            </p></div
+                                ></a>
+                          </article>
+                          <article>
+                                <a href="#" class="mostPopularContainer"
+                                      ><img
+                                            src="image site\Projet 2 - Reservia\images\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg"
+                                            class="carteImageMost"
+                                            alt="vue d'une chambre avec lit" />
+                                      <div class="mostTxt">
+                                            <h3>
+                                                  Au coeur de l'eau chambre
+                                                  d'hôtes
+                                            </h3>
+                                            <p class="mostNightTxt">
+                                                  Nuit à partir de
+                                                  <strong>71€</strong>
+                                            </p>
+                                            <p class="mostStar">
+                                                  <img
+                                                        src="image site\Projet 2 - Reservia\images\logo\star4- 1.png"
+                                                        class="star"
+                                                        alt="note hébergement"
+                                                  />
+                                            </p></div
+                                ></a>
+                          </article>
+                          <article>
+                                <a href="#" class="mostPopularContainer"
+                                      ><img
+                                            src="image site\Projet 2 - Reservia\images\hebergements\4_small\febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                                            class="carteImageMost"
+                                            alt="vue d'une chambre avec lit"
+                                      />
+                                      <div class="mostTxt">
+                                            <h3>
+                                                  Hôtel tout bleu et blanc
+                                            </h3>
+                                            <p class="mostNightTxt">
+                                                  Nuit à partir de
+                                                  <strong>68€</strong>
+                                            </p>
+                                            <p class="mostStar">
+                                                  <img
+                                                        src="image site\Projet 2 - Reservia\images\logo\star4- 1.png"
+                                                        class="star"
+                                                        alt="note hébergement"
+                                                  />
+                                            </p>
+                                      </div>
+                                </a>
+                          </article>
+                    </div>
+              </section>  
+                
+                <section id="hebergement">
                         <h2>Hébergement à Marseille</h2>
                         <div class="carteContainer">
-                              <article class="carte">
+                              <article class="carteHebergement">
                                     <a href=""
                                           ><img
                                                 src="image site\Projet 2 - Reservia\images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                                                class="carteImage"
+                                                class="carteImageHebergement"
                                                 alt="vue d'une chambre avec lit " />
                                           <div class="carteTxt">
-                                                <h3>Auberge la Cannebière</h3>
-                                                <p>
+                                                <h3 class="titleHebergement">Auberge la Cannebière</h3>
+                                                <p class="HebergementTxt">
                                                       Nuit a partir de
-                                                      <strong>225€</strong>
+                                                      <strong>25€</strong>
                                                 </p>
                                                 <img
                                                       src="image site\Projet 2 - Reservia\images\logo\star4- 1.png"
-                                                      class="star"
+                                                      class="starHebergement"
                                                       alt="note hébergement"
                                                 /></div
                                     ></a>
                               </article>
 
-                              <article class="carte">
+                              <article class="carteHebergement">
                                     <a href=""
                                           ><img
                                                 src="image site\Projet 2 - Reservia\images\hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                                                class="carteImage"
+                                                class="carteImageHebergement"
                                                 alt="vue d'une chambre avec lit" />
                                           <div class="carteTxt">
-                                                <h3>Hôtel du port</h3>
-                                                <p>
+                                                <h3 class="titleHebergement">Hôtel du port</h3>
+                                                <p class="HebergementTxt">
                                                       Nuit à partir de
                                                       <strong>52€</strong>
                                                 </p>
                                                 <img
                                                       src="image site\Projet 2 - Reservia\images\logo\star5- 1.png"
-                                                      class="star"
+                                                      class="starHebergement"
                                                       alt="note hébergement"
                                                 /></div
                                     ></a>
                               </article>
 
-                              <article class="carte">
+                              <article class="carteHebergement">
                                     <a href=""
                                           ><img
                                                 src="image site\Projet 2 - Reservia\images\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                                                class="carteImage"
+                                                class="carteImageHebergement"
                                                 alt="vue d'une chambre avec lit" />
                                           <div class="carteTxt">
-                                                <h3>Hôtel les mouettes</h3>
-                                                <p>
+                                                <h3 class="titleHebergement">Hôtel les mouettes</h3>
+                                                <p class="HebergementTxt">
                                                       Nuit à partir de
                                                       <strong>76€</strong>
                                                 </p>
                                                 <img
                                                       src="image site\Projet 2 - Reservia\images\logo\star4- 1.png"
-                                                      class="star"
+                                                      class="starHebergement"
                                                       alt="note hébergement"
                                                 /></div
                                     ></a>
                               </article>
 
-                              <article class="carte">
+                              <article class="carteHebergement">
                                     <a href=""
                                           ><img
                                                 src="image site\Projet 2 - Reservia\images\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-                                                class="carteImage"
+                                                class="carteImageHebergement"
                                                 alt="vue d'une chambre avec lit" />
                                           <div class="carteTxt">
-                                                <h3>Hôtel de la mer</h3>
-                                                <p>
+                                                <h3 class="titleHebergement">Hôtel de la mer</h3>
+                                                <p class="HebergementTxt">
                                                       Nuit à partir de
                                                       <strong>46€</strong>
                                                 </p>
                                                 <img
                                                       src="image site\Projet 2 - Reservia\images\logo\star3- 1.png"
-                                                      class="star"
+                                                      class="starHebergement"
                                                       alt="note hébergement"
                                                 /></div
                                     ></a>
                               </article>
 
-                              <article class="carte">
+                              <article class="carteHebergement">
                                     <a href=""
                                           ><img
                                                 src="image site\Projet 2 - Reservia\images\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-                                                class="carteImage"
+                                                class="carteImageHebergement"
                                                 alt="vue d'une chambre avec lit" />
-                                          <h3>Auberge le panier</h3>
-                                          <p>
+                                          <h3 class="titleHebergement" >Auberge le panier</h3>
+                                          <p class="HebergementTxt">
                                                 Nuit à partir de
                                                 <strong>23€</strong>
                                           </p>
                                           <img
                                                 src="image site\Projet 2 - Reservia\images\logo\star4- 1.png"
-                                                class="star"
+                                                class="starHebergement"
+                                                
                                                 alt="note hébergement"
                                     /></a>
                               </article>
 
-                              <article class="carte">
+                              <article class="carteHebergement">
                                     <a href=""
                                           ><img
                                                 src="image site\Projet 2 - Reservia\images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-                                                class="carteImage"
+                                                class="carteImageHebergement"
                                                 alt="vue d'une chambre avec lit"
                                           />
-                                          <h3>Hôtel de chez Amina</h3>
-                                          <p>
+                                          <h3 class="titleHebergement">Hôtel de chez Amina</h3>
+                                          <p class="HebergementTxt">
                                                 Nuit à partir de
                                                 <strong>96€</strong>
                                           </p>
                                           <img
                                                 src="image site\Projet 2 - Reservia\images\logo\star5- 1.png"
-                                                class="star"
+                                                class="starHebergement"
                                                 alt="note hébergement"
                                           />
                                     </a>
                               </article>
+                              <button class="buttonMore">Afficher plus</button>
                         </div>
                   </section>
-                  <section id="mostPopular">
-                        <div class="titleMost">
-                              <h2>les plus populaire</h2>
-                              <p class="mostLogo">
-                                    <img
-                                          src="image site\Projet 2 - Reservia\images\logo\chart-line-solid.svg"
-                                    />
-                              </p>
-                        </div>
-
-                        <div class="carteContainer">
-                              <article>
-                                    <a href="#" class="mostPopularContainer"
-                                          ><img
-                                                src="image site\Projet 2 - Reservia\images\hebergements\4_small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                                                class="carteImageMost"
-                                                alt="vue d'une chambre avec lit" />
-                                          <div class="mostTxt">
-                                                <h3>
-                                                      Hôtel le soleil du matin
-                                                </h3>
-                                                <p class="mostNightTxt">
-                                                      Nuit à partir de
-                                                      <strong>128€</strong>
-                                                </p>
-                                                <p class="mostStar">
-                                                      <img
-                                                            src="image site\Projet 2 - Reservia\images\logo\star5- 1.png"
-                                                            class="star"
-                                                            alt="note hébergement"
-                                                      />
-                                                </p></div
-                                    ></a>
-                              </article>
-                              <article>
-                                    <a href="#" class="mostPopularContainer"
-                                          ><img
-                                                src="image site\Projet 2 - Reservia\images\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg"
-                                                class="carteImageMost"
-                                                alt="vue d'une chambre avec lit" />
-                                          <div class="mostTxt">
-                                                <h3>
-                                                      Au coeur de l'eau chambre
-                                                      d'hôtes
-                                                </h3>
-                                                <p class="mostNightTxt">
-                                                      Nuit à partir de
-                                                      <strong>71€</strong>
-                                                </p>
-                                                <p class="mostStar">
-                                                      <img
-                                                            src="image site\Projet 2 - Reservia\images\logo\star4- 1.png"
-                                                            class="star"
-                                                            alt="note hébergement"
-                                                      />
-                                                </p></div
-                                    ></a>
-                              </article>
-                              <article>
-                                    <a href="#" class="mostPopularContainer"
-                                          ><img
-                                                src="image site\Projet 2 - Reservia\images\hebergements\4_small\febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                                                class="carteImageMost"
-                                                alt="vue d'une chambre avec lit"
-                                          />
-                                          <div class="mostTxt">
-                                                <h3>
-                                                      Hôtel tout bleu et blanc
-                                                </h3>
-                                                <p class="mostNightTxt">
-                                                      Nuit à partir de
-                                                      <strong>68€</strong>
-                                                </p>
-                                                <p class="mostStar">
-                                                      <img
-                                                            src="image site\Projet 2 - Reservia\images\logo\star4- 1.png"
-                                                            class="star"
-                                                            alt="note hébergement"
-                                                      />
-                                                </p>
-                                          </div>
-                                    </a>
-                              </article>
-                        </div>
-                  </section>
+                  
             </div>
             <section id="activites">
-                  <h2>activités à Marseille</h2>
+                  <h2>Activités à Marseille</h2>
                   <div class="carteContainer">
                         <article class="carte">
                               <a href=""
