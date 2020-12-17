@@ -588,54 +588,86 @@ footer {
     .buttonMore{
           margin-left: 5%;
     }
+    .carteImage{
+          
+    }
     .carteContainerFooter{
+      height: auto;
           display: grid;
-          grid-template-columns: 1fr 1fr 1fr 1fr ;
-          grid-template-rows: repeat(2 , 1fr);
-          row-gap: 30px;
+          grid-template-columns: repeat(4 , 1fr);
+          grid-template-rows: repeat(20 , 25px);
+          
           column-gap: 30px;
       
     }
     #port
     {
-          
           grid-column-start: 1;
           grid-row-start: 1;
-          grid-row-end: span 2;
+          grid-row-end: span 20;
+          height: auto;
+          margin: 0;
+          
+          
+    }
+    #carteImagePort{
+          height: 90%;
+          
     }
     #fort{
-      grid-column-start: 2;
-      grid-row-start:1 ;
-      
-
+     grid-column-start: 2;
+     grid-row-start: 1;
+     grid-row-end:span 12;
+     height: auto;
+     margin: 0;
     }
     #frioul{
-      grid-column-start: 2;
-      grid-row-start:2 ;
+          
+          grid-column-start: 2;
+          grid-row-start: 15;
+          grid-row-end: 21;
+          height: auto;
+          margin: 0;
+      
     }
     #calanques{
       grid-column-start: 3;
-      grid-row-start:1 ;
-      grid-row-end: 2 ;
+      grid-row-start: 1;
+      grid-row-end: 21;
+      height: auto;
+      margin: 0;
 
     }
-    #notreDame{
-      grid-column-start: 4;
-      grid-row-start:1 ;
+    #carteImageCalanques{
+          height: 90%;
+         
     }
+    #notreDame{
+       grid-column-start: 4;  
+       grid-row-start: 1; 
+       grid-row-end: 10;
+       height: auto;
+       margin: 0;
+    }
+
 
     #parc{
       grid-column-start: 4;
-      grid-row-start:2 ;
-      
+      grid-row-start: 12;
+      grid-row-end: 21;
+      height: auto;
+      margin: 0;
 
+    }
+    #carteImageParc{
+          height: 77%;
     }
     #activites{
           padding: 0;
           padding-left: 2%;
        
     }
-
+    
     .footerDesktop {
             display: flex;
             justify-content: space-around;
