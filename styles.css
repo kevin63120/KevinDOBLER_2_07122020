@@ -227,8 +227,8 @@ CARTES
 
 #mostPopular,
 #hebergement,
-#activites,
-footer {
+#activites
+ {
      padding: 5%;
 }
 article p{
@@ -403,6 +403,7 @@ FOOTER
 
 
 footer {
+      padding: 5%;
       text-align: left;
       background-color: #f2f2f2;
       width: 100%;
@@ -424,7 +425,7 @@ footer {
 
 /* debut de mediaquery  min-size 700*/
 
-@media screen and (min-width: 700px)
+@media screen and (min-width: 1100px)
  {
      /***********
      HEADER Desktop
@@ -558,7 +559,7 @@ footer {
    
     .carteHebergement{
           width: 28%;
-          margin-right: 22px;
+          margin-right: auto;
           margin-left: 25px;
           margin-bottom: 30px;
           background-color: white;
@@ -567,6 +568,7 @@ footer {
 
     .buttonMore{
           background-color: #f2f2f2;
+          height: auto;
     }
     .carteContainerDesktop{
           display: flex;
@@ -588,18 +590,57 @@ footer {
     }
     .carteContainerFooter{
           display: grid;
-          grid-template-columns: 1fr 2fr 1fr 2fr ;
-          grid-template-rows: 200px 60px;
+          grid-template-columns: 1fr 1fr 1fr 1fr ;
+          grid-template-rows: repeat(2 , 1fr);
+          row-gap: 30px;
+          column-gap: 30px;
+      
+    }
+    #port
+    {
           
-          
-          
+          grid-column-start: 1;
+          grid-row-start: 1;
+          grid-row-end: span 2;
+    }
+    #fort{
+      grid-column-start: 2;
+      grid-row-start:1 ;
+      
+
+    }
+    #frioul{
+      grid-column-start: 2;
+      grid-row-start:2 ;
+    }
+    #calanques{
+      grid-column-start: 3;
+      grid-row-start:1 ;
+      grid-row-end: 2 ;
+
+    }
+    #notreDame{
+      grid-column-start: 4;
+      grid-row-start:1 ;
     }
 
+    #parc{
+      grid-column-start: 4;
+      grid-row-start:2 ;
+      
+
+    }
+    #activites{
+          padding: 0;
+          padding-left: 2%;
+       
+    }
 
     .footerDesktop {
             display: flex;
             justify-content: space-around;
             padding: 0;
+            margin-top:30px ;
             padding-top: 2%;
             padding-bottom: 1%;
         }
