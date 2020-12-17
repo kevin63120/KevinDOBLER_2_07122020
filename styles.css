@@ -424,11 +424,16 @@ footer {
 
 /* debut de mediaquery  min-size 700*/
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 700px)
+ {
      /***********
      HEADER Desktop
      *********/
-    header{
+      body{
+            margin-left:2%;
+            margin-right: 2%;
+      }
+     header{
            margin:3%;
            padding:0;
       }        
@@ -502,29 +507,104 @@ footer {
     .filterContainer{
       justify-content: flex-start;
     }
+    #hebergement {
+          
+          
+          padding: 0;
+          padding-bottom: 30px;
+          width: 64%;
+          
+          padding-left:15px ;
+          margin: 15px;
+          border-radius: 25px;
+          background-color: #f2f2f2;
+    }
+    #hebergement h2{
+          margin-left: 25px;
+          margin-top: 4%;
+
+    }
+    #mostPopular{
+        
+      padding: 15px;
+      width: 30%;
+      
+      border-radius: 25px;
+
+    }
     .containerHebergement{
           display: flex;
           flex-direction: row-reverse;
           align-items: center;
+          justify-content: space-around;
+
+         
     }
-    .carteContainer{
+    .mostPopularContainer{
+      display: flex;
+      width: 80%;
+      height: 150px;
+      min-height: 150px;
+      padding: 5px;
+      padding-right: 0;
+      padding-bottom: 10px;
+      border-radius: 20px;
+      margin-bottom: 26px;
+      margin-left: 17px;
+      box-shadow: #f2f2f2 5px 5px 10px 5px;
+      background-color: white;
+  
+    }
+   
+    .carteHebergement{
+          width: 28%;
+          margin-right: 22px;
+          margin-left: 25px;
+          margin-bottom: 30px;
+          background-color: white;
+          padding-bottom: 1%;
+    }
+
+    .buttonMore{
+          background-color: #f2f2f2;
+    }
+    .carteContainerDesktop{
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
-          width: 60%;
+          width: 70%;
+          
+         
                     
+    }
+    .carteContainerHebergement{
+          display: flex;
+          flex-wrap: wrap;
+         
+          
+    }
+    .buttonMore{
+          margin-left: 5%;
+    }
+    .carteContainerFooter{
+          display: grid;
+          grid-template-columns: 1fr 2fr 1fr 2fr ;
+          grid-template-rows: 200px 60px;
+          
+          
+          
     }
 
 
-    footer {
+    .footerDesktop {
             display: flex;
             justify-content: space-around;
             padding: 0;
             padding-top: 2%;
             padding-bottom: 1%;
         }
-}
 
+}
 @media screen and (max-width: 260px){
       body{
       flex-wrap: nowrap;
