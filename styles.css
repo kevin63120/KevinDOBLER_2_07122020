@@ -3,6 +3,7 @@
 }
 
 body {
+      
       margin:0;
       font-family: "Raleway";
 }
@@ -77,7 +78,7 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 465px ;
+    max-width: 430px ;
     align-items: center;
     border: #f2f2f2 0.5px solid;
     border-right: none;
@@ -114,7 +115,8 @@ input {
       height: 100%;
       font-weight: bolder;
       font-size: 1.2em;
-      text-align: center;
+      text-align: start;
+      padding-left: 3%;
 }
 
 
@@ -139,6 +141,7 @@ button {
     border-radius: 15px;
     background-color: #0065fc;
     font-family: 'Raleway';
+    
     
 }
 
@@ -199,7 +202,7 @@ div h3 {
     display: flex;
     align-items: center;
     text-align: center;
-    max-width: 200px;
+    
     height: 50px;
     margin-bottom: 10px;
     margin-right: 20px;
@@ -210,12 +213,61 @@ div h3 {
     font-weight: bold;
     border-radius: 50px;
     
-}
-.infoImage{
-    width:5px;
-    margin-right: 20px;
     
 }
+.navDesktop a:hover{
+      animation-name: topbar;
+      animation-duration: 0.5s ;
+      animation-fill-mode: forwards;
+}
+@keyframes topbar{
+      from{
+            border-top: solid 2px white;
+            color: black;
+            
+      }
+      to{
+            border-top: solid 2px #0065fc;
+            color: #0065fc;
+            
+            
+      }
+}
+.buttonMore:hover{
+      animation-name: slide;
+      animation-duration: 0.5s ;
+      animation-fill-mode: forwards;
+}
+.labelFiltre:hover{
+      animation-name: slide;
+      animation-duration: 0.5s ;
+      animation-fill-mode: forwards;
+}
+@keyframes slide{
+      from {
+           
+           position:  relative;
+           left: 0; 
+           background-color: white;
+           color: black
+            ;
+      }
+      to {
+            background-color: #0065fc;
+            color: cornsilk;
+            right: 100%;
+            
+      }
+}
+.infoImage{
+      padding: 3px 6px;
+      width: 18px;
+      margin-right: 20px;
+      border-radius: 50%;
+      border: #0065fc 0.2px solid;
+    
+}
+
 
 /***************
 
@@ -328,7 +380,7 @@ article h3 {
       border: white 1px;
       border-top-right-radius: 20px;
       border-top-left-radius: 20px;
-      padding: 2px;     
+      padding: 4px;     
 }
 .titleHebergement{
       margin: 6px;
@@ -425,7 +477,7 @@ footer {
 
 /* debut de mediaquery  min-size 700*/
 
-@media screen and (min-width: 1100px)
+@media screen and (min-width: 1200px)
  {
      /***********
      HEADER Desktop
@@ -435,8 +487,9 @@ footer {
             margin-right: 2%;
       }
      header{
-           margin:3%;
+           margin:0;
            padding:0;
+           padding-left: 3%;
       }        
 
     #navMobile {
@@ -461,28 +514,40 @@ footer {
 
     }
      .hightPage a{
-          width: auto;
-          
+          width: 200px;
+          padding-left: 7%;
          text-align: center;
+         padding-top: 60px;
     }
     .hebergement{
-          color: red;
-          border-top:black 2px solid ;
+          border-top: #0065fc 2px solid;
+
+
+    }
+    #hebergement{
+          margin-top: 3px;
     }
     a#activity{
           border-bottom: 0;
+          padding-left: 11%;
+    }
+    #ensseigne{
+         margin-top: 25px;
+         margin-bottom: 25px;
     }
 
    .navDesktop{
         display: flex;
         width: 100%;
         justify-content: flex-end;
+
+        height: 100px;
     }
     .navDesktop2{
       flex-direction: row;
       text-align: center;
       display: flex;
-      width: 400px;
+      width: 600px;
       justify-content: space-around;
     }
     .buttonRecherche{
@@ -525,6 +590,9 @@ footer {
           margin-top: 4%;
 
     }
+    .carteImageMost{
+          margin : 0;
+    }
     #mostPopular{
         
       padding: 15px;
@@ -532,6 +600,14 @@ footer {
       
       border-radius: 25px;
 
+    }
+    .mostLogo{
+          position: relative;
+          right: 17%;
+    }
+    .titleMost1{
+          position: relative;
+          left: 5%;
     }
     .containerHebergement{
           display: flex;
@@ -548,11 +624,11 @@ footer {
       min-height: 150px;
       padding: 5px;
       padding-right: 0;
-      padding-bottom: 10px;
+      padding-bottom: 6px;
       border-radius: 20px;
       margin-bottom: 26px;
       margin-left: 17px;
-      box-shadow: #f2f2f2 5px 5px 10px 5px;
+      box-shadow: rgba(0, 0, 0, 0.062) 5px 5px 10px ;
       background-color: white;
   
     }
@@ -564,6 +640,7 @@ footer {
           margin-bottom: 30px;
           background-color: white;
           padding-bottom: 1%;
+          box-shadow: rgba(0, 0, 0, 0.062) 5px 5px 10px ;
     }
 
     .buttonMore{
@@ -611,7 +688,7 @@ footer {
           
     }
     #carteImagePort{
-          height: 90%;
+          height: 89%;
           
     }
     #fort{
@@ -630,6 +707,9 @@ footer {
           margin: 0;
       
     }
+    #carteImageFrioul{
+         height: 63%;
+    }
     #calanques{
       grid-column-start: 3;
       grid-row-start: 1;
@@ -639,7 +719,7 @@ footer {
 
     }
     #carteImageCalanques{
-          height: 90%;
+          height: 89%;
          
     }
     #notreDame{
@@ -660,14 +740,23 @@ footer {
 
     }
     #carteImageParc{
-          height: 77%;
+          height: 76%;
     }
     #activites{
           padding: 0;
           padding-left: 2%;
        
     }
-    
+    #carteImageFort{
+      height: 82%;
+    }
+    #carteImageNotreDame{
+          height: 75%;
+
+    }
+    .titleActivity{
+          margin:4%;
+    }
     .footerDesktop {
             display: flex;
             justify-content: space-around;
