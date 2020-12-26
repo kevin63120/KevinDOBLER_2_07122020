@@ -16,41 +16,57 @@ header {
 .navDesktop{
     display: none;
 }
+.navMobile{
+      display: flex;
+}
 
 .filterDesktop{
       display:none;
+      flex-direction: row;
 }
-.hightPage a {
-      display: flex;
-      align-items: center;
-      width: 100px;
-      height: 46px;
-      font-size: 1rem;
-      color: #0065fc;
-      text-decoration: none;
-}
+
 a{
     text-decoration: none;
 }
-.hightPage {
+
+
+.navLeft {
       display: flex;
-      justify-content: space-between;
-      margin: 0 5%;
-      width: 100%;
-      font-weight: bold;
+      flex-direction: column;
+      width: 50%;
+      padding-bottom: 0.5rem;
+      align-items: flex-start;
+      
+      
 }
-
-#navMobile {
-    text-align: center;
-    height: 30px;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom:2rem ;
-    margin-top:1.5rem;
-    
-
+.activity{
+      
+      margin-top: 1.3rem;
+      width: -webkit-fill-available;
+      text-align: center;
+      height: 2rem;
+      color: black;
 }
-
+.hebergement{
+      width: -webkit-fill-available;
+      text-align: center;
+      border-bottom: #0065fc solid 2px;
+      margin-top: 1.3rem;
+      height: 2rem;
+      color: #0065fc;
+}
+.navRight{
+      display: flex;
+      flex-direction: column-reverse;
+      width: 50%;
+      padding-bottom: 0.5rem;
+      align-items: flex-end;
+}
+.inscription{
+      color: #0065fc;
+      font-weight: 740;
+      margin-right: 1rem;
+}
 a#activity {
     color: black;
     font-weight: 500;
@@ -179,7 +195,7 @@ box-sizing: content-box;
     text-align: center;
 }
 #dog{
-      right: 10%;
+      right: 8%;
 }
 
 #heart {
@@ -230,12 +246,12 @@ header p{
 }
 @keyframes topbar{
       from{
-            border-top: solid 2px white;
-            color: black;
+            border-bottom: solid 2px white;
+            
             
       }
       to{
-            border-top: solid 2px #0065fc;
+            border-bottom: solid 2px #0065fc;
             color: #0065fc;
             
             
@@ -342,9 +358,22 @@ article p{
 .mostNightTxt{
       margin-top: 4%;
       font-size: 0.9em;
+      margin-left: 0.5rem;
 }
 .mostStar{
-     margin-top: 18%;
+    
+    display: flex;
+    
+    margin-left: 0.5rem;
+    margin-top: 1.5rem;
+}
+.mostStarHebergement{
+      display: flex;
+      margin-top: auto;
+      margin-left: 1rem;
+}
+.star{
+      width: 0.9rem;
 }
 .mostTxt h3{
       margin-bottom: 0;
@@ -364,6 +393,7 @@ article p{
 
 article h3 {
       font-size: medium;
+      margin-left: 0.5rem;
 }
 .carteHebergement{
       width: 100%;
@@ -392,11 +422,11 @@ article h3 {
 }
 .titleHebergement{
       margin: 6px;
-      margin-left:10px;
+      margin-left:1rem;
 }
 .HebergementTxt{
       margin: 6px;
-      margin-left:10px;
+      margin-left:1rem;
 }
 
 .starHebergement{
@@ -484,6 +514,48 @@ footer {
 }
 
 /* debut de mediaquery  min-size 700*/
+@media screen and (min-width: 770px){
+
+      #hebergement {
+           
+            padding: 0;
+            padding-bottom: 30px;
+           
+            padding-left: 15px;
+            margin: 15px;
+            border-radius: 25px;
+            background-color: #f2f2f2;
+        }
+        .carteContainerHebergement{
+              display: flex;
+              flex-wrap: wrap;
+        }
+        .carteContainerFooter{
+              display: flex;
+              flex-wrap: wrap;
+        }
+        .carteHebergement {
+            width: 28%;
+            margin-right: auto;
+            margin-left: 25px;
+            margin-bottom: 30px;
+            background-color: white;
+            padding-bottom: 1%;
+        }
+        #activité{
+              flex-direction: row;
+        }
+        .carteImage{
+              width: 100%;
+        }.carte{
+              width: 40%;
+        }
+        
+        .footerDesktop{
+              display: flex;
+              justify-content: space-around;
+        }
+}
 
 @media screen and (min-width: 1200px)
  {
@@ -520,18 +592,39 @@ footer {
     .containerNavDesktop{
           display: flex;
           justify-content: flex-start;
-
-    }
-
-     .hightPage a{
-          width: 200px;
-          padding-left: 7%;
-         text-align: center;
-         padding-top: 60px;
          
+
     }
+    .navRight{
+          flex-direction: row;
+          width: 28%;
+          margin-right: 3rem;
+          justify-content: space-around;
+          align-items: center;
+          height: 7rem;
+
+    }
+    .activity{
+          margin-top: 0;
+          height: auto;
+          width: auto;
+    }
+    .navLeft{
+          height: 7rem;
+          align-items: center;
+          flex-direction: row;
+          justify-content: space-between;
+          width: inherit;
+    }
+
+     
     .hebergement{
           border-top: #0065fc 2px solid;
+          text-align: center;
+          width: 9rem;
+          border-bottom: 0;
+          height: 6.5rem;
+          padding-top: 2.5rem;
 
 
     }
@@ -555,11 +648,11 @@ footer {
         height: 100px;
     }
     .navDesktop2{
-      flex-direction: row;
-      text-align: center;
+      
       display: flex;
       width: 600px;
       justify-content: space-around;
+      margin-top: 0rem;
     }
     .buttonRecherche{
           font-family: 'Raleway';
@@ -631,7 +724,7 @@ footer {
     }
     .mostLogo{
           position: relative;
-          right: 17%;
+          right: 6%;
     }
     .titleMost1{
           position: relative;
@@ -647,7 +740,7 @@ footer {
     }
     .mostPopularContainer{
       display: flex;
-      width: 80%;
+      width: 90%;
       height: 150px;
       min-height: 150px;
       padding: 5px;
@@ -659,6 +752,9 @@ footer {
       box-shadow: rgba(0, 0, 0, 0.062) 5px 5px 10px ;
       background-color: white;
   
+    }
+    .mostStar{
+      margin-top: 3rem;
     }
    
     .carteHebergement{
@@ -785,6 +881,13 @@ footer {
     .titleActivity{
           margin:4%;
     }
+    #port + .carte{
+          width: 100%;
+    }
+    .carte+.carteTab 
+    {width: 100%;
+
+    }
     .footerDesktop {
             display: flex;
             justify-content: space-around;
@@ -796,9 +899,4 @@ footer {
             margin-right: 2%;
         }
 
-}
-@media screen and (max-width: 260px){
-      body{
-      flex-wrap: nowrap;
-}
 }
