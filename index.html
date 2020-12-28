@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,33 +20,28 @@
     <body>
         <header>
             <nav class="navMobile navDesktop">
-                  <div class="navLeft">
-                         <img
-                          id="ensseigne"
-                          src="image site\Projet 2 - Reservia\images\logo\Reservia@3xredimensionné.png"
-                          alt="ensseigne reservia"
-                        /><a href="#hebergements" class="hebergement">Hébergements</a>
-                  </div>
-                  <div class="navRight">
-                        <a href="#activités" class="activity">Activités</a>
-                        <a href="" class="inscription">S'inscrire</a>
-                   </div>
+                <div class="navLeft">
+                    <img id="ensseigne" src="imageSite/Projet2Reservia/images/logo/Reservia@3xredimensionné.png" alt="ensseigne reservia"/><a href="#hebergements" class="hebergement"
+                        >Hébergements</a
+                    >
+                </div>
+                <div class="navRight">
+                    <a href="#activités" class="activity">Activités</a>
+                    <a href="" class="inscription">S'inscrire</a>
+                </div>
             </nav>
 
             <div class="h1">
                 <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                 <p id="sousTitre">En plein centre ville ou en pleine nature.</p>
             </div>
-            <form method="POST" action="">
+            <form method="POST" action="#">
                 <div class="inputContainer">
                     <div class="pointeurContainer">
-                        <img
-                            class="inputImage"
-                            id="pointeur"
-                            src="image site\Projet 2 - Reservia\images\logo\map-marker-alt-solid.svg"
-                        />
+                        <img class="inputImage" id="pointeur" alt="image de pointeur" src="imageSite/Projet2Reservia/images/logo/map-marker-alt-solid.svg"/>
+                        
                     </div>
-                    <label for="recherche"></label>
+                    <label></label>
 
                     <input
                         type="search"
@@ -54,11 +49,8 @@
                         name="recherche"
                     /><button class="buttonRecherche">
                         <img
-                            src="image site\Projet 2 - Reservia\images\logo\search-solid.svg"
-                            class="butonImage"
-                            alt="image de loupe"
-                        />
-                        <div id="recherche">Rechercher</div>
+                            src="imageSite/Projet2Reservia/images/logo/search-solid.svg" class="butonImage" alt="image de loupe" />
+                        <span id="recherche">Rechercher</span>
                     </button>
                 </div>
 
@@ -67,15 +59,12 @@
                     <h3 class="filterDesktop">Filtres</h3>
                     <button class="labelFiltre">
                         <img
-                            src="image site\Projet 2 - Reservia\images\logo\money-bill-wave-solid.svg"
-                            class="filterLogo"
-                            alt="image de loupe"
-                        /><span class="filtreTxt">Économique</span>
+                            src="imageSite/Projet2Reservia/images/logo/money-bill-wave-solid.svg" class="filterLogo" alt="image de loupe"/><span class="filtreTxt">Économique</span>
                     </button>
 
                     <button class="labelFiltre">
                         <img
-                            src="image site\Projet 2 - Reservia\images\logo\child-solid.svg"
+                            src="imageSite/Projet2Reservia/images/logo/child-solid.svg"
                             class="filterLogo"
                             id="childImage"
                             alt="image de loupe"
@@ -84,7 +73,7 @@
 
                     <button class="labelFiltre">
                         <img
-                            src="image site\Projet 2 - Reservia\images\logo\heart-solid.svg"
+                            src="imageSite/Projet2Reservia/images/logo/heart-solid.svg"
                             class="filterLogo"
                             id="heart"
                             alt="image de loupe"
@@ -95,7 +84,7 @@
 
                     <button class="labelFiltre">
                         <img
-                            src="image site\Projet 2 - Reservia\images\logo\dog-solid.svg"
+                            src="imageSite/Projet2Reservia/images/logo/dog-solid.svg"
                             class="filterLogo"
                             id="dog"
                             alt="image de loupe"
@@ -108,8 +97,9 @@
             <p>
                 <img
                     class="infoImage"
-                    src="image site\Projet 2 - Reservia\images\logo\info-solid.svg"
-                />Plus de 500 logements sont disponibles dans cette ville
+                    src="imageSite/Projet2Reservia/images/logo/info-solid.svg"
+                    alt="image loupe"
+                /> Plus de 500 logements sont disponibles dans cette ville
             </p>
         </header>
         <div class="containerHebergement">
@@ -118,16 +108,17 @@
                     <h2 class="titleMost1">Les plus populaire</h2>
                     <p class="mostLogo">
                         <img
-                            src="image site\Projet 2 - Reservia\images\logo\chart-line-solid.svg"
+                            src="imageSite/Projet2Reservia/images/logo/chart-line-solid.svg"
+                            alt='ligne statistique'
                         />
                     </p>
                 </div>
 
-                <div class="carteContainer" class="carteContainerDesktop">
+                <div class="carteContainer carteContainerDesktop">
                     <article>
                         <a href="#" class="mostPopularContainer"
                             ><img
-                                src="image site\Projet 2 - Reservia\images\hebergements\4_small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                                src="imageSite/Projet2Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                                 class="carteImageMost"
                                 alt="vue d'une chambre avec lit" />
                             <div class="mostTxt">
@@ -138,31 +129,31 @@
                                 </p>
                                 <p class="mostStar">
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                                
+
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                               
+
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                              
+
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                                
-                                    <img 
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+
+                                    <img
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
@@ -172,7 +163,7 @@
                     <article>
                         <a href="#" class="mostPopularContainer"
                             ><img
-                                src="image site\Projet 2 - Reservia\images\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg"
+                                src="imageSite/Projet2Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                                 class="carteImageMost"
                                 alt="vue d'une chambre avec lit" />
                             <div class="mostTxt">
@@ -183,42 +174,40 @@
                                 </p>
                                 <p class="mostStar">
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                                
+
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                               
+
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                              
+
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid-grey.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solid-grey.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                                
-                                  
                                 </p></div
                         ></a>
                     </article>
                     <article>
                         <a href="#" class="mostPopularContainer"
                             ><img
-                                src="image site\Projet 2 - Reservia\images\hebergements\4_small\febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                                src="imageSite/Projet2Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                                 class="carteImageMost"
                                 alt="vue d'une chambre avec lit"
                             />
@@ -230,34 +219,33 @@
                                 </p>
                                 <p class="mostStar">
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                                
+
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                               
+
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                              
+
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid-grey.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solid-grey.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                                
                                 </p>
                             </div>
                         </a>
@@ -268,13 +256,10 @@
             <section id="hebergement">
                 <h2>Hébergements à Marseille</h2>
                 <div class="carteContainerHebergement">
-                    <article
-                        class="carteHebergement"
-                        class="carteHebergementDesktop"
-                    >
+                    <article class="carteHebergement carteHebergementDesktop">
                         <a href=""
                             ><img
-                                src="image site\Projet 2 - Reservia\images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                src="imageSite/Projet2Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                                 class="carteImageHebergement"
                                 alt="vue d'une chambre avec lit " />
                             <div class="carteTxt">
@@ -287,34 +272,33 @@
                                 </p>
                                 <p class="mostStarHebergement">
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                                
+
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                               
+
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                              
+
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid-grey.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solid-grey.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                                
                                 </p></div
                         ></a>
                     </article>
@@ -322,7 +306,7 @@
                     <article class="carteHebergement carteHebergementDesktop">
                         <a href=""
                             ><img
-                                src="image site\Projet 2 - Reservia\images\hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                                src="imageSite/Projet2Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                                 class="carteImageHebergement"
                                 alt="vue d'une chambre avec lit" />
                             <div class="carteTxt">
@@ -333,34 +317,33 @@
                                 </p>
                                 <p class="mostStarHebergement">
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                                
+
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                               
+
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                              
+
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                                
                                 </p></div
                         ></a>
                     </article>
@@ -368,7 +351,7 @@
                     <article class="carteHebergement carteHebergementDesktop">
                         <a href=""
                             ><img
-                                src="image site\Projet 2 - Reservia\images\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                                src="imageSite/Projet2Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                                 class="carteImageHebergement"
                                 alt="vue d'une chambre avec lit" />
                             <div class="carteTxt">
@@ -381,45 +364,41 @@
                                 </p>
                                 <p class="mostStarHebergement">
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                                
+
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                               
+
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                              
+
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid-grey.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solid-grey.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                                
                                 </p></div
                         ></a>
                     </article>
 
-                    <article
-                        class="carteHebergement"
-                        class="carteHebergementDesktop"
-                    >
+                    <article class="carteHebergement carteHebergementDesktop">
                         <a href=""
                             ><img
-                                src="image site\Projet 2 - Reservia\images\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                src="imageSite/Projet2Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                                 class="carteImageHebergement"
                                 alt="vue d'une chambre avec lit" />
                             <div class="carteTxt">
@@ -432,45 +411,41 @@
                                 </p>
                                 <p class="mostStarHebergement">
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                                
+
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                               
+
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                              
+
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid-grey.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solid-grey.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
                                     <img
-                                        src="image site\Projet 2 - Reservia\images\logo\star-solid-grey.svg"
+                                        src="imageSite/Projet2Reservia/images/logo/star-solid-grey.svg"
                                         class="star"
                                         alt="note hébergement"
                                     />
-                                
                                 </p></div
                         ></a>
                     </article>
 
-                    <article
-                        class="carteHebergement"
-                        class="carteHebergementDesktop"
-                    >
+                    <article class="carteHebergement carteHebergementDesktop">
                         <a href=""
                             ><img
-                                src="image site\Projet 2 - Reservia\images\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                                src="imageSite/Projet2Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                                 class="carteImageHebergement"
                                 alt="vue d'une chambre avec lit" />
                             <h3 class="titleHebergement">Auberge le panier</h3>
@@ -479,45 +454,41 @@
                                 <strong>23€</strong>
                             </p>
                             <p class="mostStarHebergement">
-                              <img
-                                  src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
-                                  class="star"
-                                  alt="note hébergement"
-                              />
-                          
-                              <img
-                                  src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
-                                  class="star"
-                                  alt="note hébergement"
-                              />
-                         
-                              <img
-                                  src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
-                                  class="star"
-                                  alt="note hébergement"
-                              />
-                        
-                              <img
-                                  src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
-                                  class="star"
-                                  alt="note hébergement"
-                              />
-                              <img
-                                  src="image site\Projet 2 - Reservia\images\logo\star-solid-grey.svg"
-                                  class="star"
-                                  alt="note hébergement"
-                              />
-                          
-                          </p></a>
+                                <img
+                                    src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
+                                    class="star"
+                                    alt="note hébergement"
+                                />
+
+                                <img
+                                    src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
+                                    class="star"
+                                    alt="note hébergement"
+                                />
+
+                                <img
+                                    src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
+                                    class="star"
+                                    alt="note hébergement"
+                                />
+
+                                <img
+                                    src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
+                                    class="star"
+                                    alt="note hébergement"
+                                />
+                                <img
+                                    src="imageSite/Projet2Reservia/images/logo/star-solid-grey.svg"
+                                    class="star"
+                                    alt="note hébergement"
+                                /></p
+                        ></a>
                     </article>
 
-                    <article
-                        class="carteHebergement"
-                        class="carteHebergementDesktop"
-                    >
+                    <article class="carteHebergement carteHebergementDesktop">
                         <a href=""
                             ><img
-                                src="image site\Projet 2 - Reservia\images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                                src="imageSite/Projet2Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                                 class="carteImageHebergement"
                                 alt="vue d'une chambre avec lit"
                             />
@@ -529,40 +500,39 @@
                                 <strong>96€</strong>
                             </p>
                             <p class="mostStarHebergement">
-                              <img
-                                  src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
-                                  class="star"
-                                  alt="note hébergement"
-                              />
-                          
-                              <img
-                                  src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
-                                  class="star"
-                                  alt="note hébergement"
-                              />
-                         
-                              <img
-                                  src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
-                                  class="star"
-                                  alt="note hébergement"
-                              />
-                        
-                              <img
-                                  src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
-                                  class="star"
-                                  alt="note hébergement"
-                              />
-                              <img
-                                  src="image site\Projet 2 - Reservia\images\logo\star-solid - blue.svg"
-                                  class="star"
-                                  alt="note hébergement"
-                              />
-                          
-                          </p>
+                                <img
+                                    src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
+                                    class="star"
+                                    alt="note hébergement"
+                                />
+
+                                <img
+                                    src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
+                                    class="star"
+                                    alt="note hébergement"
+                                />
+
+                                <img
+                                    src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
+                                    class="star"
+                                    alt="note hébergement"
+                                />
+
+                                <img
+                                    src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
+                                    class="star"
+                                    alt="note hébergement"
+                                />
+                                <img
+                                    src="imageSite/Projet2Reservia/images/logo/star-solidBlue.svg"
+                                    class="star"
+                                    alt="note hébergement"
+                                />
+                            </p>
                         </a>
                     </article>
                 </div>
-                <button class="buttonMore">Afficher plus</button>
+                <button class="buttonMore buttonMoreNav">Afficher plus</button>
             </section>
         </div>
         <section id="activites">
@@ -571,7 +541,7 @@
                 <article class="carte carteTab" id="port">
                     <a href=""
                         ><img
-                            src="image site\Projet 2 - Reservia\images\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                            src="imageSite/Projet2Reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                             class="carteImage"
                             id="carteImagePort"
                             alt="vue d'une chambre avec lit"
@@ -582,7 +552,7 @@
                 <article class="carte carteTab" id="fort">
                     <a href=""
                         ><img
-                            src="image site\Projet 2 - Reservia\images\activites\4_small\paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                            src="imageSite/Projet2Reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                             class="carteImage"
                             id="carteImageFort"
                             alt="vue d'une chambre avec lit"
@@ -593,7 +563,7 @@
                 <article class="carte carteTab" id="frioul">
                     <a href=""
                         ><img
-                            src="image site\Projet 2 - Reservia\images\activites\4_small\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                            src="imageSite/Projet2Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                             class="carteImage"
                             id="carteImageFrioul"
                             alt="vue d'une chambre avec lit"
@@ -601,10 +571,10 @@
                         <h3 class="titleActivity">Îles du Frioul</h3></a
                     >
                 </article>
-                <article class="carte carteTab " id="calanques">
+                <article class="carte carteTab" id="calanques">
                     <a href=""
                         ><img
-                            src="image site\Projet 2 - Reservia\images\activites\4_small\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                            src="imageSite/Projet2Reservia/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                             class="carteImage"
                             id="carteImageCalanques"
                             alt="vue d'une chambre avec lit"
@@ -617,7 +587,7 @@
                 <article class="carte carteTab" id="notreDame">
                     <a href=""
                         ><img
-                            src="image site\Projet 2 - Reservia\images\activites\4_small\florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                            src="imageSite/Projet2Reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                             class="carteImage"
                             id="carteImageNotreDame"
                             alt="vue d'une chambre avec lit"
@@ -628,7 +598,7 @@
                 <article class="carte carteTab" id="parc">
                     <a href=""
                         ><img
-                            src="image site\Projet 2 - Reservia\images\activites\4_small\lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                            src="imageSite/Projet2Reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
                             class="carteImage"
                             id="carteImageParc"
                             alt="vue d'une chambre avec lit"
@@ -642,21 +612,21 @@
             <section class="footerSection">
                 <h2>A propos</h2>
 
-                <a href="">Fonctionnement du site</a>
-                <a href="">Conditions générales de vente</a>
-                <a href="">Données et confidentialité</a>
+                <a href="#">Fonctionnement du site</a>
+                <a href="#">Conditions générales de vente</a>
+                <a href="#">Données et confidentialité</a>
             </section>
             <section class="footerSection">
                 <h2>Nos hébergements</h2>
 
-                <a href="">Charte de qualité</a>
-                <a href="">Soumettre votre hôtel</a>
+                <a href="#">Charte de qualité</a>
+                <a href="#">Soumettre votre hôtel</a>
             </section>
             <section class="footerSection">
                 <h2>Assistance</h2>
 
-                <a href="">Centre d'aide</a>
-                <a href="">Nous contacter</a>
+                <a href="#">Centre d'aide</a>
+                <a href="#">Nous contacter</a>
             </section>
         </footer>
     </body>

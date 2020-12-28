@@ -149,6 +149,10 @@ button {
    
     
 }
+.buttonMoreNav{    
+ background-color: white;
+}
+
 .buttonRecherche{
       
      height: 48px;
@@ -240,11 +244,24 @@ header p{
     
 }
 .navDesktop a:hover{
-      animation-name: topbar;
+      animation-name: topbardown;
       animation-duration: 0.5s ;
       animation-fill-mode: forwards;
 }
-@keyframes topbar{
+@keyframes topbarup{
+      from{
+            border-top: solid 2px white;
+            
+            
+      }
+      to{
+            border-top: solid 2px #0065fc;
+            color: #0065fc;
+            
+            
+      }
+}
+@keyframes topbardown{
       from{
             border-bottom: solid 2px white;
             
@@ -273,6 +290,22 @@ header p{
            position:  relative;
            left: 0; 
            background-color: white;
+           color: black
+            ;
+      }
+      to {
+            background-color: #0065fc;
+            color: cornsilk;
+            right: 100%;
+            
+      }
+}
+@keyframes slide2{
+      from {
+           
+           position:  relative;
+           left: 0; 
+           background-color: #f2f2f2;
            color: black
             ;
       }
@@ -434,7 +467,7 @@ article h3 {
 }
 
 .buttonMore{
-      background-color: white;
+      background-color: #f2f2f2;
       font-weight: bold;
       border: none;
       font-size: 1.2em;
@@ -548,8 +581,10 @@ footer {
         .carteImage{
               width: 100%;
         }.carte{
-              width: 40%;
-        }
+            width: 45%;
+            padding: 0.3rem;
+            margin: 0.5rem;
+            }
         
         .footerDesktop{
               display: flex;
@@ -604,10 +639,22 @@ footer {
           height: 7rem;
 
     }
+    .inscription{
+      margin-top: 0;
+      height: 100%;
+      padding-top: 2.5rem;
+      padding-left: 1.5rem;
+      align-items: center;
+      width: 8rem;
+
+    }
     .activity{
-          margin-top: 0;
-          height: auto;
-          width: auto;
+      margin-top: 0;
+      height: 100%;
+      padding-top: 2.5rem;
+      padding-left: 1.5rem;
+      align-items: center;
+      width: 8rem;
     }
     .navLeft{
           height: 7rem;
@@ -617,14 +664,21 @@ footer {
           width: inherit;
     }
 
-     
+
+    .navDesktop a:hover{
+      animation-name: topbarup;
+      animation-duration: 0.5s ;
+      animation-fill-mode: forwards;
+}
     .hebergement{
+          
           border-top: #0065fc 2px solid;
           text-align: center;
           width: 9rem;
           border-bottom: 0;
           height: 6.5rem;
           padding-top: 2.5rem;
+          margin: 0;
 
 
     }
@@ -775,7 +829,7 @@ footer {
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
-          width: 70%;
+          
           
          
                     
@@ -814,6 +868,9 @@ footer {
     #carteImagePort{
           height: 89%;
           
+    }
+    .carte{
+          width: 100%;
     }
     #fort{
      grid-column-start: 2;
