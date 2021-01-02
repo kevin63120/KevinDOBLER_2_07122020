@@ -42,13 +42,13 @@ a{
 .activity{
       
       margin-top: 1.3rem;
-      width: -webkit-fill-available;
+      width: 100%;
       text-align: center;
       height: 2rem;
       color: black;
 }
 .hebergement{
-      width: -webkit-fill-available;
+      width: 100%;
       text-align: center;
       border-bottom: #0065fc solid 2px;
       margin-top: 1.3rem;
@@ -64,7 +64,7 @@ a{
 }
 .inscription{
       color: #0065fc;
-      font-weight: 740;
+      font-weight: bold;
       margin-right: 1rem;
 }
 a#activity {
@@ -104,7 +104,13 @@ h1 {
     height: 45px;
     margin-top: 35px;
     margin-bottom:35px;
-    margin: 35px 5%
+    margin: 35px 5%;
+
+    
+
+}
+ .inputContainer:focus{
+       
 
 }
 .pointeurContainer{
@@ -112,7 +118,7 @@ h1 {
       background-color: #f2f2f2;
       width: 70px;
       height: 46px;
-      border: solid  #f2f2f2 1px;
+      border: solid  transparent 1px;
       border-top-left-radius: 15px;
       border-bottom-left-radius: 15px;
       position: relative;
@@ -143,7 +149,7 @@ button {
       
     
     text-decoration: none;
-    border: 6px solid #0065fc;
+    border: 6px solid transparent;
     border-radius: 10px;
     background-color: #0065fc;
    
@@ -160,7 +166,7 @@ button {
     display:flex;
     justify-content: center;
     align-items: center;
-    border: 6px solid #0065fc;
+    border: 6px solid transparent;
     border-radius: 15px;
     background-color: #0065fc;
     font-family: 'Raleway';
@@ -180,8 +186,8 @@ button {
 .filterLogo {
 box-sizing: content-box;
     display: block;
-    border: solid #deebff 6px;
-    border-left: solid #deebff 5px;
+    border: solid transparent 6px;
+    border-left: solid transparent 5px;
     background-color: #deebff;
     width: 22px;
     padding: 8px;
@@ -312,6 +318,7 @@ header p{
       to {
             background-color: #0065fc;
             color: cornsilk;
+            border: transparent;
             right: 100%;
             
       }
@@ -467,7 +474,7 @@ article h3 {
 }
 
 .buttonMore{
-      background-color: #f2f2f2;
+      background-color:white;
       font-weight: bold;
       border: none;
       font-size: 1.2em;
@@ -483,7 +490,7 @@ article h3 {
 .carte a {
       text-decoration: none;
       color: black;
-      font-weight: 740;
+      font-weight: bold;
       text-align: justify;
 }
 .carte p {
@@ -566,6 +573,7 @@ footer {
         .carteContainerFooter{
               display: flex;
               flex-wrap: wrap;
+              justify-content: space-between;
         }
         .carteHebergement {
             width: 28%;
@@ -589,6 +597,9 @@ footer {
         .footerDesktop{
               display: flex;
               justify-content: space-around;
+        }
+        .buttonMore{
+              background-color: #f2f2f2;
         }
 }
 
@@ -817,6 +828,7 @@ footer {
           margin-left: 25px;
           margin-bottom: 30px;
           background-color: white;
+          border: transparent;
           padding-bottom: 1%;
           box-shadow: rgba(0, 0, 0, 0.062) 5px 5px 10px ;
     }
