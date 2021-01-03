@@ -70,17 +70,17 @@ a{
 a#activity {
     color: black;
     font-weight: 500;
-    border-bottom: rgba(0, 0, 0, 0.329) 2px solid;
+    border-bottom: rgba(0, 0, 0, 0.329) 0.063rem solid;
 }
 a.select {
     color: #0065fc;
-    border-bottom: #0065fc 2px solid;
+    border-bottom: #0065fc 0.125rem solid;
     width: 50%;
 }
 
 h1 {
     width: 100%;
-    margin-bottom: 3px;
+    margin-bottom: 0.188rem;
     font-size: 1.4rem;
     text-align: left;
     font-weight: bold;
@@ -96,15 +96,15 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 430px ;
+    max-width: 26.875rem ;
     align-items: center;
-    border: #f2f2f2 0.5px solid;
+    border: #f2f2f2 0.031rem solid;
     border-right: none;
-    border-radius: 20px;
-    height: 45px;
-    margin-top: 35px;
-    margin-bottom:35px;
-    margin: 35px 5%;
+    border-radius: 1.25rem;
+    height: 2.813rem;
+    margin-top: 2.188rem;
+    margin-bottom:2.188rem;
+    margin: 2.188rem 5%;
 
     
 
@@ -114,18 +114,18 @@ h1 {
 .pointeurContainer{
       display: flex;
       background-color: #f2f2f2;
-      width: 70px;
-      height: 46px;
-      border: solid  transparent 1px;
-      border-top-left-radius: 15px;
-      border-bottom-left-radius: 15px;
+      width: 4.375rem;
+      height: 2.875rem;
+      border: solid  transparent 0.063rem;
+      border-top-left-radius: 0.938rem;
+      border-bottom-left-radius: 0.938rem;
       position: relative;
       left: 0px;
      justify-content: center;
       align-items: center;
 }
 #pointeur{
-      width: 15px;
+      width: 0.938rem;
       
      
 
@@ -147,8 +147,8 @@ button {
       
     
     text-decoration: none;
-    border: 6px solid transparent;
-    border-radius: 10px;
+    border: 0.375rem solid transparent;
+    border-radius: 0.625rem;
     background-color: #0065fc;
    
     
@@ -159,13 +159,13 @@ button {
 
 .buttonRecherche{
       
-     height: 48px;
-    width: 55px;
+     height: 3rem;
+    width: 3.438rem;
     display:flex;
     justify-content: center;
     align-items: center;
-    border: 6px solid transparent;
-    border-radius: 15px;
+    border: 0.375rem solid transparent;
+    border-radius: 0.938rem;
     background-color: #0065fc;
     font-family: 'Raleway';
     
@@ -174,8 +174,8 @@ button {
 
 .butonImage {
       display: block;
-      width: 15px;
-      height: 15px;
+      width: 0.938rem;
+      height: 0.938rem;
 }
 #recherche {
       display: none;
@@ -184,19 +184,19 @@ button {
 .filterLogo {
 box-sizing: content-box;
     display: block;
-    border: solid transparent 6px;
-    border-left: solid transparent 5px;
+    border: solid transparent 0.375rem;
+    border-left: solid transparent 0.313rem;
     background-color: #deebff;
-    width: 22px;
-    padding: 8px;
-    height: 22px;
+    width: 1.375rem;
+    padding: 0.5rem;
+    height: 1.375rem;
     
     border-radius: 50%;
     position: relative;
     right: 11%;
 }
 .filtreTxt{
-      margin-right: 10px;
+      margin-right: 0.625rem;
       
     font-family: 'Raleway';
     font-weight: 800;
@@ -207,12 +207,12 @@ box-sizing: content-box;
 }
 
 #heart {
-    width: 22px;
-    padding: 8px;
+    width: 1.375rem;
+    padding: 0.5rem;
 }
 #childImage {
-    width: 22px;
-    height: 22px;
+    width: 1.375rem;
+    height:1.375rem;
     right: 13%;
 }
 div h3 {
@@ -235,15 +235,15 @@ header p{
     align-items: center;
     text-align: center;
     
-    height: 50px;
-    margin-bottom: 10px;
-    margin-right: 20px;
-    margin-left: 5px;
+    height: 3.125rem;
+    margin-bottom: 0.625rem;
+    margin-right: 1.25rem;
+    margin-left: 0.313rem;
     background-color: white;
-    border: rgba(0, 0, 0, 0.196) 2px solid;
+    border: rgba(0, 0, 0, 0.196) 0.125rem solid;
     border-left: none;
     font-weight: bold;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     
     
 }
@@ -254,12 +254,12 @@ header p{
 }
 @keyframes topbarup{
       from{
-            border-top: solid 2px white;
+            border-top: solid 0.125rem white;
             
             
       }
       to{
-            border-top: solid 2px #0065fc;
+            border-top: solid 0.125rem #0065fc;
             color: #0065fc;
             
             
@@ -267,12 +267,12 @@ header p{
 }
 @keyframes topbardown{
       from{
-            border-bottom: solid 2px white;
+            border-bottom: solid 0.125rem white;
             
             
       }
       to{
-            border-bottom: solid 2px #0065fc;
+            border-bottom: solid 0.125rem #0065fc;
             color: #0065fc;
             
             
@@ -322,11 +322,11 @@ header p{
       }
 }
 .infoImage{
-      padding: 3px 6px;
-      width: 18px;
-      margin-right: 20px;
+      padding: 0.188rem 0.375rem;
+      width: 1.125rem;
+      margin-right: 0.625rem;
       border-radius: 50%;
-      border: #0065fc 0.2px solid;
+      border: #0065fc 0.013rem solid;
     
 }
 
@@ -355,15 +355,15 @@ article p{
 .mostPopularContainer{
       display: flex;
       width: 100%;
-      height: 130px;
-      min-height: 130px;
-      padding: 5px;
+      height: 8.125rem;
+      min-height: 8.125rem;
+      padding: 0.313;
       padding-right: 0;
-      padding-bottom :10px;
-      border-radius: 20px;
-      margin-bottom: 8px;
+      padding-bottom :0.625rem;
+      border-radius: 1.25rem;
+      margin-bottom: 0.5rem;
       margin-right: 15%;
-      box-shadow: #f2f2f2 5px 5px 10px 5px;
+      box-shadow: #f2f2f2 0.313rem 0.313rem 0.625rem 0.313rem;
       background-color: white;
 
 }
@@ -371,26 +371,26 @@ article p{
       object-fit: cover;
       width: 40%;
       height: 100%;
-      border: white 1px;
-      border-top-left-radius: 20px;
-      border-bottom-left-radius: 20px;
+      border: white 0.063rem;
+      border-top-left-radius: 1.25rem;
+      border-bottom-left-radius: 1.25rem;
       
-      margin:2px;    
+      margin:0.125rem;    
 }
 .mostTxt{
       display: flex;
       flex-direction: column;
-      margin-left: 10px;
-      width: 150px;
-      min-width: 150px;
-      height: 90px;
-      min-width: 90px;
+      margin-left: 0.625rem;
+      width: 9.375rem;
+      min-width: 9.375rem;
+      height: 5.625rem;
+      min-width:5.625rem;
       text-decoration: none;
       color: black;
       
 }
 .mostTxt p{
-      margin-bottom: 1px;
+      margin-bottom: 0.063rem;
       
 }
 .mostNightTxt{
@@ -415,7 +415,7 @@ article p{
 }
 .mostTxt h3{
       margin-bottom: 0;
-      margin-top: 10px;
+      margin-top: 0.625rem;
 }
 
 .titleMost{
@@ -424,8 +424,8 @@ article p{
       justify-content: space-between;
 }
 .mostLogo {
-      width: 25px;
-      height: 15px;
+      width: 1.563rem;
+      height: 0.938rem;
 }
 
 
@@ -435,11 +435,11 @@ article h3 {
 }
 .carteHebergement{
       width: 100%;
-      height: 200px;
-      box-shadow: #f2f2f2 5px 15px 5px;
-      margin-bottom: 12px;
-      border-radius: 20px;
-      border: white 1px solid;
+      height: 12.5rem;
+      box-shadow: #f2f2f2 0.313rem 0.938rem 0.313rem;
+      margin-bottom: 0.75rem;
+      border-radius: 1.25rem;
+      border: white 0.063rem solid;
       
       
       
@@ -453,22 +453,22 @@ article h3 {
       object-fit: cover;
       width: 100%;
       height: 60%;
-      border: white 1px;
-      border-top-right-radius: 20px;
-      border-top-left-radius: 20px;
-      padding: 4px;     
+      border: white 0.063rem;
+      border-top-right-radius: 1.25rem;
+      border-top-left-radius: 1.25rem;
+      padding: 0.25rem;     
 }
 .titleHebergement{
-      margin: 6px;
+      margin: 0.375rem;
       margin-left:1rem;
 }
 .HebergementTxt{
-      margin: 6px;
+      margin: 0.375rem;
       margin-left:1rem;
 }
 
 .starHebergement{
-      margin-left:10px;
+      margin-left:0.625rem;
 }
 
 .buttonMore{
@@ -476,12 +476,12 @@ article h3 {
       font-weight: bold;
       border: none;
       font-size: 1.2em;
-      margin-top: 20px;
+      margin-top: 1.25rem;
 }
 
 .carte {
       border: 1px white;
-      border-radius: 20px;
+      border-radius: 1.25rem;
       
       text-decoration: none;
 }
@@ -497,20 +497,20 @@ article h3 {
 }
 .carte {
       width: 100%;
-      height: 180px;
+      height: 11.25rem;
       
       
       margin-bottom: 20px;
 
-      box-shadow: #f2f2f2 5px 5px 10px 5px;
+      box-shadow: #f2f2f2 0.313rem 0.313rem 0.625rem 0.313rem;
 }
 .carteImage {
       object-fit: cover;
       width: 100%;
       height: 65%;
-      border: white 1px;
-      border-top-right-radius: 20px;
-      border-top-left-radius: 20px;
+      border: white 0.063;
+      border-top-right-radius: 1.25rem;
+      border-top-left-radius: 1.25rem;
      
       
 }
@@ -557,11 +557,11 @@ footer {
       #hebergement {
            
             padding: 0;
-            padding-bottom: 30px;
+            padding-bottom: 1.875rem;
            
-            padding-left: 15px;
-            margin: 15px;
-            border-radius: 25px;
+            padding-left: 0.938rem;
+            margin: 0.938rem;
+            border-radius: 1.563rem;
             background-color: #f2f2f2;
         }
         .carteContainerHebergement{
@@ -576,8 +576,8 @@ footer {
         .carteHebergement {
             width: 28%;
             margin-right: auto;
-            margin-left: 25px;
-            margin-bottom: 30px;
+            margin-left: 1.563rem;
+            margin-bottom: 1.875rem;
             background-color: white;
             padding-bottom: 1%;
         }
@@ -682,7 +682,7 @@ footer {
 }
     .hebergement{
           
-          border-top: #0065fc 2px solid;
+          border-top: #0065fc 0.125rem solid;
           text-align: center;
           width: 9rem;
           border-bottom: 0;
@@ -693,15 +693,15 @@ footer {
 
     }
     #hebergement{
-          margin-top: 3px;
+          margin-top: 0.188rem;
     }
     a#activity{
           border-bottom: 0;
           padding-left: 11%;
     }
     #ensseigne{
-         margin-top: 25px;
-         margin-bottom: 25px;
+         margin-top: 1.563rem;
+         margin-bottom: 1.563rem;
     }
 
    .navDesktop{
@@ -709,20 +709,20 @@ footer {
         width: 100%;
         justify-content: flex-end;
 
-        height: 100px;
+        height: 6.25rem;
     }
     .navDesktop2{
       
       display: flex;
-      width: 600px;
+      width: 37.5rem;
       justify-content: space-around;
       margin-top: 0rem;
     }
     .buttonRecherche{
           font-family: 'Raleway';
           width: auto;
-          border-top-right-radius: 10px;
-          border-bottom-right-radius: 10px;
+          border-top-right-radius: 0.625rem;
+          border-bottom-right-radius: 0.625rem;
           border-top-left-radius: 0;
           border-bottom-left-radius: 0;
           color: white;
@@ -731,7 +731,7 @@ footer {
 
     }
     .inputContainer{
-      margin: 35px 0;
+      margin: 2.188rem 0;
     }
     h1{
       padding: 0;
@@ -749,7 +749,7 @@ footer {
           display: block;
           text-align: left;
           margin-right: 2%;
-          margin-top: 12px;
+          margin-top: 0.75rem;
     }
     .filterContainer{
       justify-content: flex-start;
@@ -762,16 +762,16 @@ footer {
           
           
           padding: 0;
-          padding-bottom: 30px;
+          padding-bottom: 1.875rem;
           width: 64%;
           
-          padding-left:15px ;
-          margin: 15px;
-          border-radius: 25px;
+          padding-left:0.938rem ;
+          margin: 0.938rem;
+          border-radius: 1.563rem;
           background-color: #f2f2f2;
     }
     #hebergement h2{
-          margin-left: 25px;
+          margin-left:1.563rem;
           margin-top: 4%;
 
     }
@@ -780,10 +780,10 @@ footer {
     }
     #mostPopular{
         
-      padding: 15px;
+      padding: 0.938rem;
       width: 30%;
       
-      border-radius: 25px;
+      border-radius: 1.563rem;
 
     }
     .mostLogo{
@@ -805,14 +805,14 @@ footer {
     .mostPopularContainer{
       display: flex;
       width: 90%;
-      height: 150px;
-      min-height: 150px;
-      padding: 5px;
+      height: 9.375rem;
+      min-height: 9.375rem;
+      padding: 0.313rem;
       padding-right: 0;
-      padding-bottom: 6px;
-      border-radius: 20px;
-      margin-bottom: 26px;
-      margin-left: 17px;
+      padding-bottom: 0.375rem;
+      border-radius: 1.25rem;
+      margin-bottom: 1.625rem;
+      margin-left: 1.063rem;
       box-shadow: rgba(0, 0, 0, 0.062) 5px 5px 10px ;
       background-color: white;
   
@@ -824,12 +824,12 @@ footer {
     .carteHebergement{
           width: 28%;
           margin-right: auto;
-          margin-left: 25px;
-          margin-bottom: 30px;
+          margin-left: 1.563rem;
+          margin-bottom: 1.875rem;
           background-color: white;
           border: transparent;
           padding-bottom: 1%;
-          box-shadow: rgba(0, 0, 0, 0.062) 5px 5px 10px ;
+          box-shadow: rgba(0, 0, 0, 0.062) 0.313rem 0.313rem 0.625rem ;
     }
 
     .buttonMore{
@@ -854,9 +854,7 @@ footer {
     .buttonMore{
           margin-left: 5%;
     }
-    .carteImage{
-          
-    }
+   
     .carteContainerFooter{
       height: auto;
           display: grid;
@@ -964,7 +962,7 @@ footer {
             padding-top: 2%;
             padding-bottom: 1%;
             margin-left: 2%;
-            margin-right: 2%;
+            width: 98%;
         }
 
 }
