@@ -1,12 +1,14 @@
 * {
     box-sizing: border-box;
 }
-html {
+.container{
+      max-width: 1440px;
+      margin: auto;
 }
 body {
     margin: 0;
     font-family: "Raleway";
-    max-width: 1920px;
+    
     display: flex;
     flex-direction: column;
 }
@@ -150,7 +152,7 @@ button {
 }
 
 .buttonRecherche {
-    height: 3rem;
+    height: 2.8rem;
     width: 3.438rem;
     display: flex;
     justify-content: center;
@@ -499,15 +501,18 @@ FOOTER
 *************/
 
 footer {
-    padding: 5%;
-    text-align: left;
+    
+    
     background-color: #f2f2f2;
     width: 100%;
 }
 .footerSection {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    
+}
+.footerInner{
+      padding-left: 2rem;
 }
 .footerSection h2 {
     margin-top: 2rem;
@@ -544,7 +549,7 @@ footer {
         background-color: white;
         padding-bottom: 1%;
     }
-    #activité {
+    #activite {
         flex-direction: row;
     }
     #mostPopular {
@@ -559,12 +564,14 @@ footer {
         margin: 0.5rem;
     }
 
-    .footerDesktop {
-        display: flex;
-        justify-content: space-around;
-    }
+    
     .buttonMore {
         background-color: #f2f2f2;
+    }
+    .footerInner{
+          display: flex;
+          justify-content: space-around;
+          margin :auto
     }
 }
 
@@ -572,14 +579,11 @@ footer {
     /***********
      HEADER Desktop
      *********/
-    body {
-        margin-left: 2%;
-        margin-right: 2%;
-    }
+    
     header {
         margin: 0;
         padding: 0;
-        padding-left: 3%;
+        
     }
 
     #navMobile {
@@ -752,7 +756,7 @@ footer {
         display: flex;
         flex-direction: row-reverse;
 
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .mostPopularContainer {
         display: flex;
@@ -867,8 +871,8 @@ footer {
         height: 76%;
     }
     #activites {
-        padding: 0 1.8rem 0 1.8rem;
-        padding-left: 2%;
+        padding: 0 ;
+        
     }
     #carteImageFort {
         height: 82%;
@@ -885,15 +889,18 @@ footer {
     .carte + .carteTab {
         width: 100%;
     }
+    .footerDesktop{
+          margin-top: 5%;
+    }
 
-    .footerDesktop {
-        display: flex;
-        justify-content: space-between;
+    
+    .footerInner{
+       display: flex;
+        
         padding: 0;
-        margin-top: 5%;
-        padding: 2% 0 1% 7%;
-        width: 107%;
-        margin-left: -5%;
+        padding: 2% 0 1% ;
+        
+
     }
     .footerSection {
         width: 33%;
