@@ -792,7 +792,7 @@ footer {
         height: auto;
     }
     .carteContainerDesktop {
-        display: flex;
+        
         flex-direction: row;
         flex-wrap: wrap;
     }
