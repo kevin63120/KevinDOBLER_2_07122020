@@ -88,9 +88,9 @@ a {
 
 .inscription {
   color: #0065fc;
-  /* font-weight: bold;
-  margin-right: 1rem;
-  margin-bottom: 0.4rem;*/
+  margin: 1rem 2rem;
+  font-weight: bold;
+  
 }
 
 a#activity {
