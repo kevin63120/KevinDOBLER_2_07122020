@@ -1,299 +1,336 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-.container{
-      max-width: 1440px;
-      margin: auto;
+
+.container {
+  max-width: 1440px;
+  margin: auto;
 }
+
 body {
-    margin: 0;
-    font-family: "Raleway";
-    
-    display: flex;
-    flex-direction: column;
+  margin: 0;
+  font-family: "Raleway";
+  display: flex;
+  flex-direction: column;
 }
-.fas{
-    font-size: large;
+
+.fas {
+  font-size: large;
 }
+
 /******
 header
 ******/
 header {
-    padding-top: 5%;
+  padding-top: 5%;
 }
+
 .navDesktop {
-    display: none;
+  display: flex;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
 }
-.navMobile {
-    display: flex;
+.navLink {
+  margin-left: auto;
+  order: 3;
+  width: 100%;
+  display: flex;
 }
+.link {
+  width: 50%;
+}
+
 #ensseigne {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 .filterDesktop {
-    display: none;
-    flex-direction: row;
+  display: none;
+  flex-direction: row;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .navLeft {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    padding-bottom: 0.5rem;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-bottom: 0.5rem;
+  align-items: flex-start;
 }
+
 .activity {
-    margin-top: 1.3rem;
-    width: 100%;
-    text-align: center;
-    height: 2rem;
-    border-bottom: solid rgba(128, 128, 128, 0.178) 2px;
-    color: black;
+  margin-top: 1.3rem;
+  text-align: center;
+  height: 2rem;
+  border-bottom: solid rgba(128, 128, 128, 0.178) 2px;
+  color: black;
 }
+
 .hebergement {
-    width: 100%;
-    text-align: center;
-    border-bottom: #0065fc solid 2px;
-    margin-top: 1.3rem;
-    height: 2rem;
-    color: #0065fc;
+  text-align: center;
+  border-bottom: #0065fc solid 2px;
+  margin-top: 1.3rem;
+  height: 2rem;
+  color: #0065fc;
 }
+
 .navRight {
-    display: flex;
-    flex-direction: column-reverse;
-    width: 50%;
-    padding-bottom: 0.5rem;
-    align-items: flex-end;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 50%;
+  padding-bottom: 0.5rem;
+  align-items: flex-end;
 }
+
 .inscription {
-    color: #0065fc;
-    font-weight: bold;
-    margin-right: 1rem;
-    margin-bottom: 0.4rem;
+  color: #0065fc;
+  /* font-weight: bold;
+  margin-right: 1rem;
+  margin-bottom: 0.4rem;*/
 }
+
 a#activity {
-    color: black;
-    font-weight: 500;
-    border-bottom: rgba(0, 0, 0, 0.329) 0.063rem solid;
+  color: black;
+  font-weight: 500;
+  border-bottom: rgba(0, 0, 0, 0.329) 0.063rem solid;
 }
+
 a.select {
-    color: #0065fc;
-    border-bottom: #0065fc 0.125rem solid;
-    width: 50%;
+  color: #0065fc;
+  border-bottom: #0065fc 0.125rem solid;
+  width: 50%;
 }
 
 h1 {
-    width: 100%;
-    margin-bottom: 0.188rem;
-    font-size: 1.4rem;
-    text-align: left;
-    font-weight: bold;
-    padding: 0 5%;
+  width: 100%;
+  margin-bottom: 0.188rem;
+  font-size: 1.4rem;
+  text-align: left;
+  font-weight: bold;
+  padding: 0 5%;
 }
+
 #sousTitre {
-    text-align: start;
-    font-size: 1rem;
-    padding: 0 5%;
+  text-align: start;
+  font-size: 1rem;
+  padding: 0 5%;
 }
 
 .inputContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 26.875rem;
-    align-items: center;
-    border: #f2f2f2 0.031rem solid;
-    border-right: none;
-    border-radius: 1.25rem;
-    height: 2.813rem;
-    margin-top: 2.188rem;
-    margin-bottom: 2.188rem;
-    margin: 2.188rem 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 26.875rem;
+  align-items: center;
+  border: #f2f2f2 0.031rem solid;
+  border-right: none;
+  border-radius: 1.25rem;
+  height: 2.813rem;
+  margin-top: 2.188rem;
+  margin-bottom: 2.188rem;
+  margin: 2.188rem 5%;
 }
 
 .pointeurContainer {
-    display: flex;
-    background-color: #f2f2f2;
-    width: 4.375rem;
-    height: 2.875rem;
-    border: solid transparent 0.063rem;
-    border-top-left-radius: 0.938rem;
-    border-bottom-left-radius: 0.938rem;
-    position: relative;
-    left: 0px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  background-color: #f2f2f2;
+  width: 4.375rem;
+  height: 2.875rem;
+  border: solid transparent 0.063rem;
+  border-top-left-radius: 0.938rem;
+  border-bottom-left-radius: 0.938rem;
+  position: relative;
+  left: 0;
+  justify-content: center;
+  align-items: center;
 }
+
 #pointeur {
-    width: 0.938rem;
+  width: 0.938rem;
 }
 
 input {
-    font-family: "Raleway";
-    border: none;
-    width: 100%;
-    height: 100%;
-    font-weight: bolder;
-    font-size: 1.2em;
-    text-align: start;
-    padding-left: 3%;
+  font-family: "Raleway";
+  border: none;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-size: 1.2em;
+  text-align: start;
+  padding-left: 3%;
 }
 
 button {
-    text-decoration: none;
-    border: 0.375rem solid transparent;
-    border-radius: 0.625rem;
-    background-color: #0065fc;
+  text-decoration: none;
+  border: 0.375rem solid transparent;
+  border-radius: 0.625rem;
+  background-color: #0065fc;
 }
+
 .buttonMoreNav {
-    background-color: white;
+  background-color: white;
 }
 
 .buttonRecherche {
-    height: 2.8rem;
-    width: 3.438rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 0.375rem solid transparent;
-    border-radius: 0.938rem;
-    background-color: #0065fc;
-    font-family: "Raleway";
+  height: 2.8rem;
+  width: 3.438rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.375rem solid transparent;
+  border-radius: 0.938rem;
+  background-color: #0065fc;
+  font-family: "Raleway";
 }
 
 .butonImage {
-    color: white;
+  color: white;
 }
+
 #recherche {
-    display: none;
+  display: none;
 }
 
 .filterLogo {
-    border: solid transparent 11px;
-    position: relative;
-    top: 0px;
-    right: 0px;
-    background-color: #deebff;
-    border-radius: 50%;
-    color: #0065fc;
-    width: 40px;
-}
-.filtreTxt {
-    margin-right: 0.625rem;
-    margin-left: inherit;
-    font-family: "Raleway";
-    font-weight: 800;
-    text-align: center;
+  position: relative;
+  background-color: #deebff;
+  border-radius: 50%;
+  color: #0065fc;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
 }
 
+.filtreTxt {
+  margin-right: 0.625rem;
+  margin-left: inherit;
+  font-family: "Raleway";
+  font-weight: 800;
+  text-align: center;
+}
 
 div h3 {
-    text-align: left;
+  text-align: left;
 }
+
 .filter {
-    text-align: left;
-    padding: 0 5%;
+  text-align: left;
+  padding: 0 5%;
 }
+
 .filterContainer {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 5%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5%;
 }
+
 header p {
-    padding: 0 5%;
+  padding: 0 5%;
 }
+
 .labelFiltre {
-    display: flex;
-    align-items: center;
-    padding: 0;
-    height: 40px;
-    margin-bottom: 0.625rem;
-    margin-right: 1.25rem;
-    margin-left: 0.313rem;
-    background-color: white;
-    border: rgba(0, 0, 0, 0.196) 0.125rem solid;
-    border-left: none;
-    font-weight: bold;
-    border-radius: 3.125rem;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  height: 40px;
+  margin-bottom: 0.625rem;
+  margin-right: 1.25rem;
+  margin-left: 0.313rem;
+  background-color: white;
+  border: rgba(0, 0, 0, 0.196) 0.125rem solid;
+  border-left: none;
+  font-weight: bold;
+  border-radius: 3.125rem;
 }
+
 .navDesktop a:hover {
-    animation-name: topbardown;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+  animation-name: topbardown;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
+
 @keyframes topbarup {
-    from {
-        border-top: solid 0.125rem white;
-    }
-    to {
-        border-top: solid 0.125rem #0065fc;
-        color: #0065fc;
-    }
-}
-@keyframes topbardown {
-    from {
-        border-bottom: solid 0.125rem white;
-    }
-    to {
-        border-bottom: solid 0.125rem #0065fc;
-        color: #0065fc;
-    }
-}
-.buttonMore:hover {
-    animation-name: slide;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-}
-.labelFiltre:hover {
-    animation-name: slide;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-}
-@keyframes slide {
-    from {
-        position: relative;
-        left: 0;
-        background-color: white;
-        color: black;
-    }
-    to {
-        background-color: #0065fc;
-        color: cornsilk;
-        right: 100%;
-    }
-}
-@keyframes slide2 {
-    from {
-        position: relative;
-        left: 0;
-        background-color: #f2f2f2;
-        color: black;
-    }
-    to {
-        background-color: #0065fc;
-        color: cornsilk;
-        border: transparent;
-        right: 100%;
-    }
-}
-.infoImage {
-    padding: 0.15rem 0.4rem;
+  from {
+    border-top: solid 0.125rem white;
+  }
+
+  to {
+    border-top: solid 0.125rem #0065fc;
     color: #0065fc;
-    margin-right: 0.625rem;
-    border-radius: 50%;
-    border: #0065fc 0.013rem solid;
-    font-size: small;
+  }
+}
+
+@keyframes topbardown {
+  from {
+    border-bottom: solid 0.125rem white;
+  }
+
+  to {
+    border-bottom: solid 0.125rem #0065fc;
+    color: #0065fc;
+  }
+}
+
+.buttonMore:hover {
+  animation-name: slide;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.labelFiltre:hover {
+  animation-name: slide;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+  from {
+    position: relative;
+    left: 0;
+    background-color: white;
+    color: black;
+  }
+
+  to {
+    background-color: #0065fc;
+    color: cornsilk;
+    right: 100%;
+  }
+}
+
+@keyframes slide2 {
+  from {
+    position: relative;
+    left: 0;
+    background-color: #f2f2f2;
+    color: black;
+  }
+
+  to {
+    background-color: #0065fc;
+    color: cornsilk;
+    border: transparent;
+    right: 100%;
+  }
+}
+
+.infoImage {
+  padding: 0.15rem 0.4rem;
+  color: #0065fc;
+  margin-right: 0.625rem;
+  border-radius: 50%;
+  border: #0065fc 0.013rem solid;
+  font-size: small;
 }
 
 /***************
 
 
-CARTES 
+CARTES
 
 
 ****************/
@@ -301,186 +338,201 @@ CARTES
 #mostPopular,
 #hebergement,
 #activites {
-    padding: 5%;
+  padding: 5%;
 }
+
 article p {
-    font-weight: lighter;
+  font-weight: lighter;
 }
+
 #mostPopular {
-    background-color: #f2f2f2;
-    padding: 5% 5% 10%;
+  background-color: #f2f2f2;
+  padding: 5% 5% 10%;
 }
+
 .mostPopularContainer {
-    display: flex;
-    width: 100%;
-    height: 9rem;
-    min-height: 8.125rem;
-    padding: 0.11rem;
-    padding-right: 0;
-    padding-bottom: 0.4rem;
-    border-radius: 1.25rem;
-    margin-bottom: 0.5rem;
-    margin-right: 15%;
-    box-shadow: #f2f2f2 0.313rem 0.313rem 0.625rem 0.313rem;
-    background-color: white;
+  display: flex;
+  width: 100%;
+  height: 9rem;
+  min-height: 8.125rem;
+  padding: 0.11rem;
+  padding-right: 0;
+  padding-bottom: 0.4rem;
+  border-radius: 1.25rem;
+  margin-bottom: 0.5rem;
+  margin-right: 15%;
+  box-shadow: #f2f2f2 0.313rem 0.313rem 0.625rem 0.313rem;
+  background-color: white;
 }
+
 .carteImageMost {
-    object-fit: cover;
-    width: 40%;
-    height: 100%;
-    border: white 0.063rem;
-    border-top-left-radius: 1.25rem;
-    border-bottom-left-radius: 1.25rem;
-
-    margin: 0.125rem;
+  object-fit: cover;
+  width: 40%;
+  height: 100%;
+  border: white 0.063rem;
+  border-top-left-radius: 1.25rem;
+  border-bottom-left-radius: 1.25rem;
+  margin: 0.125rem;
 }
+
 .mostTxt {
-    display: flex;
-    flex-direction: column;
-    margin-left: 0.625rem;
-    width: 9.375rem;
-    min-width: 9.375rem;
-    height: 5.625rem;
-    min-width: 5.625rem;
-    text-decoration: none;
-    color: black;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.625rem;
+  width: 9.375rem;
+  min-width: 9.375rem;
+  height: 5.625rem;
+  min-width: 5.625rem;
+  text-decoration: none;
+  color: black;
 }
-.mostTxt p {
-    margin-bottom: 0.063rem;
-}
-.mostNightTxt {
-    margin-top: 4%;
-    font-size: 0.9em;
-    margin-left: 0.5rem;
-}
-.mostStar {
-    
 
-    margin-left: 0.5rem;
-    
+.mostTxt p {
+  margin-bottom: 0.063rem;
 }
+
+.mostNightTxt {
+  margin-top: 4%;
+  font-size: 0.9em;
+  margin-left: 0.5rem;
+}
+
+.mostStar {
+  margin-left: 0.5rem;
+}
+
 .mostStarHebergement {
-    
-    margin-top: auto;
-    margin-left: 1rem;
+  margin-top: auto;
+  margin-left: 1rem;
 }
+
 .star {
-    width: 0.9rem;
-    font-size: medium;
+  width: 0.9rem;
+  font-size: medium;
 }
-.starBlue{
-    color: #0065fc;
+
+.starBlue {
+  color: #0065fc;
 }
-.starGrey{
-    color: #d4d0d0;
+
+.starGrey {
+  color: #d4d0d0;
 }
+
 .mostTxt h3 {
-    margin-bottom: 0;
-    margin-top: 0.625rem;
+  margin-bottom: 0;
+  margin-top: 0.625rem;
 }
 
 .titleMost {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 .mostLogo {
-   font-size:  medium;
+  font-size: medium;
 }
 
 article h3 {
-    font-size: medium;
-    margin-left: 0.5rem;
+  font-size: medium;
+  margin-left: 0.5rem;
 }
+
 .carteHebergement {
-    width: 100%;
-    box-shadow: #f2f2f2 0.313rem 0.938rem 0.313rem;
-    margin-bottom: 0.75rem;
-    border-radius: 1.25rem;
-    border: white 0.063rem solid;
-    padding: 0.25rem;
+  width: 100%;
+  box-shadow: #f2f2f2 0.313rem 0.938rem 0.313rem;
+  margin-bottom: 0.75rem;
+  border-radius: 1.25rem;
+  border: white 0.063rem solid;
+  padding: 0.25rem;
 }
+
 .carteHebergementPicture {
-    display: block;
-    height: 0;
-    padding-bottom: 40%;
-    overflow: hidden;
-    position: relative;
+  display: block;
+  height: 0;
+  padding-bottom: 40%;
+  overflow: hidden;
+  position: relative;
 }
+
 .carteHebergement a {
-    text-decoration: none;
-    color: black;
-    display: block;
+  text-decoration: none;
+  color: black;
+  display: block;
 }
 
 .carteImageHebergement {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border: white 0.063rem;
-    border-top-right-radius: 1.25rem;
-    border-top-left-radius: 1.25rem;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border: white 0.063rem;
+  border-top-right-radius: 1.25rem;
+  border-top-left-radius: 1.25rem;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
+
 .titleHebergement {
-    margin: 0.375rem;
-    margin-left: 1rem;
+  margin: 0.375rem;
+  margin-left: 1rem;
 }
+
 .HebergementTxt {
-    margin: 0.375rem;
-    margin-left: 1rem;
+  margin: 0.375rem;
+  margin-left: 1rem;
 }
 
 .starHebergement {
-    margin-left: 0.625rem;
+  margin-left: 0.625rem;
 }
 
 .buttonMore {
-    background-color: white;
-    font-weight: bold;
-    border: none;
-    font-size: 1.2em;
-    margin-top: 1.25rem;
+  background-color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 1.2em;
+  margin-top: 1.25rem;
 }
 
 .carte {
-    border: 1px white;
-    border-radius: 1.25rem;
-
-    text-decoration: none;
+  border: 1px white;
+  border-radius: 1.25rem;
+  text-decoration: none;
 }
+
 .carte a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    text-align: justify;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-align: justify;
 }
+
 .carte p {
-    margin: 0;
-    font-size: small;
+  margin: 0;
+  font-size: small;
 }
+
 .carte {
-    width: 100%;
-    height: 11.25rem;
-
-    margin-bottom: 20px;
-
-    box-shadow: #f2f2f2 0.313rem 0.313rem 0.625rem 0.313rem;
+  width: 100%;
+  height: 11.25rem;
+  margin-bottom: 20px;
+  box-shadow: #f2f2f2 0.313rem 0.313rem 0.625rem 0.313rem;
 }
+
 .carteImage {
-    object-fit: cover;
-    width: 100%;
-    height: 65%;
-    border: white 0.063rem;
-    border-top-right-radius: 1.25rem;
-    border-top-left-radius: 1.25rem;
+  object-fit: cover;
+  width: 100%;
+  height: 65%;
+  border: white 0.063rem;
+  border-top-right-radius: 1.25rem;
+  border-top-left-radius: 1.25rem;
 }
 
 .titleActivity {
-    margin: 5%;
+  margin: 5%;
 }
 
 /*************
@@ -493,405 +545,440 @@ FOOTER
 *************/
 
 footer {
-    
-    
-    background-color: #f2f2f2;
-    width: 100%;
+  background-color: #f2f2f2;
+  width: 100%;
 }
+
 .footerSection {
-    display: flex;
-    flex-direction: column;
-    
+  display: flex;
+  flex-direction: column;
 }
-.footerInner{
-      padding-left: 2rem;
+
+.footerInner {
+  padding-left: 2rem;
 }
+
 .footerSection h2 {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .footerSection a {
-    text-decoration: none;
-    color: black;
-    margin-top: 1rem;
+  text-decoration: none;
+  color: black;
+  margin-top: 1rem;
 }
 
-/* debut de mediaquery  min-size 700*/
+/* debut de mediaquery  min-size 700 */
 @media screen and (min-width: 770px) {
-    #hebergement {
-        padding-bottom: 1.875rem;
+  #hebergement {
+    padding-bottom: 1.875rem;
+    border-radius: 1.563rem;
+    background-color: #f2f2f2;
+  }
 
-        border-radius: 1.563rem;
-        background-color: #f2f2f2;
-    }
-    .carteContainerHebergement {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .carteContainerFooter {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .carteHebergement {
-        width: 28%;
-        margin-right: auto;
-        margin-left: 1.563rem;
-        margin-bottom: 1.875rem;
-        background-color: white;
-        padding-bottom: 1%;
-    }
-    #activite {
-        flex-direction: row;
-    }
-    #mostPopular {
-        padding: 0 5% 3%;
-    }
-    .carteImage {
-        width: 100%;
-    }
-    .carte {
-        width: 45%;
-        padding: 0;
-        margin: 0.5rem;
-    }
+  .carteContainerHebergement {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    
-    .buttonMore {
-        background-color: #f2f2f2;
-    }
-    .footerInner{
-          display: flex;
-          justify-content: space-around;
-          margin :auto
-    }
+  .carteContainerFooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .carteHebergement {
+    width: 28%;
+    margin-right: auto;
+    margin-left: 1.563rem;
+    margin-bottom: 1.875rem;
+    background-color: white;
+    padding-bottom: 1%;
+  }
+
+  #activite {
+    flex-direction: row;
+  }
+
+  #mostPopular {
+    padding: 0 5% 3%;
+  }
+
+  .carteImage {
+    width: 100%;
+  }
+
+  .carte {
+    width: 45%;
+    padding: 0;
+    margin: 0.5rem;
+  }
+
+  .buttonMore {
+    background-color: #f2f2f2;
+  }
+
+  .footerInner {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    /***********
+  /***********
      HEADER Desktop
      *********/
-    
-    header {
-        margin: 0;
-        padding: 0;
-        
-    }
+  .container {
+    padding: 0 2rem;
+  }
 
-    #navMobile {
-        display: none;
-    }
-    a.logInMobile {
-        display: none;
-    }
+  header {
+    margin: 0;
+    padding: 0;
+  }
 
-    .butonImage {
-        display: none;
-    }
-    #recherche {
-        display: block;
-    }
-    .hightPage {
-        display: block;
-        margin: 0;
-    }
-    .containerNavDesktop {
-        display: flex;
-        justify-content: flex-start;
-    }
-    .navRight {
-        flex-direction: row;
-        width: 28%;
-        margin-right: 3rem;
-        justify-content: space-around;
-        align-items: center;
-        height: 7rem;
-    }
-    .inscription {
-        margin-top: 0;
-        margin-bottom: 0;
-        height: 100%;
-        padding-top: 2.5rem;
-        padding-left: 0;
-        text-align: center;
-        align-items: center;
-        width: 8rem;
-        border-top: 2px solid transparent;
-    }
-    .activity {
-        margin-top: 0;
-        height: 100%;
-        padding-top: 2.5rem;
-        padding-left: 0;
-        margin-left: 1.25rem;
-        align-items: center;
-        width: 8rem;
-        border-top: transparent 2px solid;
-        border-bottom: transparent;
-    }
-    .navLeft {
-        height: 7rem;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-between;
-        width: inherit;
-    }
+  a.logInMobile {
+    display: none;
+  }
 
-    .navDesktop a:hover {
-        animation-name: topbarup;
-        animation-duration: 0.5s;
-        animation-fill-mode: forwards;
-    }
-    .hebergement {
-        border-top: #0065fc 0.125rem solid;
-        text-align: center;
-        width: 9rem;
-        border-bottom: 0;
-        height: 6.5rem;
-        padding-top: 2.5rem;
-        margin: 0;
-    }
+  .butonImage {
+    display: none;
+  }
 
-    a#activity {
-        border-bottom: 0;
-        padding-left: 11%;
-    }
-    #ensseigne {
-        margin-top: 0.5rem;
-        margin-bottom: 1.563rem;
-        margin-left: 0;
-    }
+  #recherche {
+    display: block;
+  }
 
-    .navDesktop {
-        display: flex;
-        width: 100%;
-        justify-content: flex-end;
+  .hightPage {
+    display: block;
+    margin: 0;
+  }
 
-        height: 6.25rem;
-    }
-    .navDesktop2 {
-        display: flex;
-        width: 37.5rem;
-        justify-content: space-around;
-        margin-top: 0rem;
-    }
-    .buttonRecherche {
-        font-family: "Raleway";
-        width: auto;
-        border-top-right-radius: 0.625rem;
-        border-bottom-right-radius: 0.625rem;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        color: white;
-        font-size: 1em;
-        font-weight: bold;
-    }
-    .inputContainer {
-        margin: 2.188rem 0;
-    }
-    h1 {
-        padding: 0;
-    }
-    #sousTitre {
-        padding: 0;
-    }
-    .filter {
-        display: none;
-    }
-    .filtreTxt {
-        font-size: large;
-    }
-    .filterDesktop {
-        display: block;
-        text-align: left;
-        margin-right: 2%;
-        margin-top: 0.75rem;
-    }
-    .filterContainer {
-        justify-content: flex-start;
-        padding: 0;
-    }
-    header p {
-        padding: 1rem 0 2rem 0;
-    }
-    #hebergement {
-        padding: 0;
+  .containerNavDesktop {
+    display: flex;
+    justify-content: flex-start;
+  }
 
-        width: 64%;
-        margin-top: 0;
+  .navLink {
+    order: initial;
+    width: auto;
+  }
 
-        border-radius: 1.563rem;
-        background-color: #f2f2f2;
-    }
-    #hebergement h2 {
-        margin-left: 1.563rem;
-        margin-top: 4%;
-    }
-    .carteImageMost {
-        margin: 0;
-    }
-    #mostPopular {
-        padding: 0.938rem;
-        width: 30%;
+  .inscription {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 100%;
+    padding-top: 2.5rem;
+    padding-left: 0;
+    text-align: center;
+    align-items: center;
+    width: 8rem;
+    border-top: 2px solid transparent;
+  }
 
-        border-radius: 1.563rem;
-    }
-    .mostLogo {
-        position: relative;
-        right: 6%;
-    }
-    .titleMost1 {
-        position: relative;
-        left: 5%;
-    }
-    .containerHebergement {
-        display: flex;
-        flex-direction: row-reverse;
+  .activity {
+    margin-top: 0;
+    height: 100%;
+    padding-top: 2.5rem;
+    padding-left: 0;
+    margin-left: 1.25rem;
+    align-items: center;
+    width: 8rem;
+    border-top: transparent 2px solid;
+    border-bottom: transparent;
+  }
 
-        justify-content: space-between;
-    }
-    .mostPopularContainer {
-        display: flex;
-        width: 90%;
-        height: 9.375rem;
-        min-height: 9.375rem;
-        padding: 0.313rem;
-        padding-right: 0;
-        padding-bottom: 0.375rem;
-        border-radius: 1.25rem;
-        margin-bottom: 1.625rem;
-        margin-left: 1.063rem;
-        box-shadow: rgba(0, 0, 0, 0.062) 5px 5px 10px;
-        background-color: white;
-    }
-    .mostStar {
-        margin-top: 3rem;
-    }
+  .navLeft {
+    height: 7rem;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: inherit;
+  }
 
-    .carteHebergement {
-        width: 28%;
-        margin-right: auto;
-        margin-left: 1.563rem;
-        margin-bottom: 1.875rem;
-        background-color: white;
-        border: transparent;
-        padding-bottom: 1%;
-        box-shadow: rgba(0, 0, 0, 0.062) 0.313rem 0.313rem 0.625rem;
-    }
+  .navDesktop a:hover {
+    animation-name: topbarup;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
 
-    .buttonMore {
-        background-color: #f2f2f2;
-        height: auto;
-    }
-    .carteContainerDesktop {
-        
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    
-    .buttonMore {
-        margin: 3% 4%;
-    }
+  .hebergement {
+    border-top: #0065fc 0.125rem solid;
+    text-align: center;
+    width: 9rem;
+    border-bottom: 0;
+    height: 6.5rem;
+    padding-top: 2.5rem;
+    margin: 0;
+  }
 
-    .carteContainerFooter {
-        height: auto;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(20, 25px);
+  a#activity {
+    border-bottom: 0;
+    padding-left: 11%;
+  }
 
-        column-gap: 30px;
-    }
-    #port {
-        grid-column-start: 1;
-        grid-row-start: 1;
-        grid-row-end: span 20;
-        height: auto;
-        margin: 0;
-    }
-    #carteImagePort {
-        height: 89%;
-    }
-    .carte {
-        width: 100%;
-    }
-    #fort {
-        grid-column-start: 2;
-        grid-row-start: 1;
-        grid-row-end: span 12;
-        height: auto;
-        margin: 0;
-    }
-    #frioul {
-        grid-column-start: 2;
-        grid-row-start: 15;
-        grid-row-end: 21;
-        height: auto;
-        margin: 0;
-    }
-    #carteImageFrioul {
-        height: 63%;
-    }
-    #calanques {
-        grid-column-start: 3;
-        grid-row-start: 1;
-        grid-row-end: 21;
-        height: auto;
-        margin: 0;
-    }
-    #carteImageCalanques {
-        height: 89%;
-    }
-    #notreDame {
-        grid-column-start: 4;
-        grid-row-start: 1;
-        grid-row-end: 10;
-        height: auto;
-        margin: 0;
-    }
+  #ensseigne {
+    margin-top: 0.5rem;
+    margin-bottom: 1.563rem;
+    margin-left: 0;
+  }
 
-    #parc {
-        grid-column-start: 4;
-        grid-row-start: 12;
-        grid-row-end: 21;
-        height: auto;
-        margin: 0;
-    }
-    #carteImageParc {
-        height: 76%;
-    }
-    #activites {
-        padding: 0 ;
-        
-    }
-    #carteImageFort {
-        height: 82%;
-    }
-    #carteImageNotreDame {
-        height: 75%;
-    }
-    .titleActivity {
-        margin: 4%;
-    }
-    #port + .carte {
-        width: 100%;
-    }
-    .carte + .carteTab {
-        width: 100%;
-    }
-    .footerDesktop{
-          margin-top: 5%;
-    }
+  .navDesktop {
+    /*display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    height: 6.25rem;*/
+  }
 
-    
-    .footerInner{
-       display: flex;
-        
-        padding: 0;
-        padding: 2% 0 1% ;
-        
+  .navDesktop2 {
+    display: flex;
+    width: 37.5rem;
+    justify-content: space-around;
+    margin-top: 0;
+  }
 
-    }
-    .footerSection {
-        width: 33%;
-    }
+  .buttonRecherche {
+    font-family: "Raleway";
+    width: auto;
+    border-top-right-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  .inputContainer {
+    margin: 2.188rem 0;
+  }
+
+  h1 {
+    padding: 0;
+  }
+
+  #sousTitre {
+    padding: 0;
+  }
+
+  .filter {
+    display: none;
+  }
+
+  .filtreTxt {
+    font-size: large;
+  }
+
+  .filterDesktop {
+    display: block;
+    text-align: left;
+    margin-right: 2%;
+    margin-top: 0.75rem;
+  }
+
+  .filterContainer {
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  header p {
+    padding: 1rem 0 2rem 0;
+  }
+
+  #hebergement {
+    padding: 0;
+    width: 64%;
+    margin-top: 0;
+    border-radius: 1.563rem;
+    background-color: #f2f2f2;
+  }
+
+  #hebergement h2 {
+    margin-left: 1.563rem;
+    margin-top: 4%;
+  }
+
+  .carteImageMost {
+    margin: 0;
+  }
+
+  #mostPopular {
+    padding: 0.938rem;
+    width: 30%;
+    border-radius: 1.563rem;
+  }
+
+  .mostLogo {
+    position: relative;
+    right: 6%;
+  }
+
+  .titleMost1 {
+    position: relative;
+    left: 5%;
+  }
+
+  .containerHebergement {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .mostPopularContainer {
+    display: flex;
+    width: 90%;
+    height: 9.375rem;
+    min-height: 9.375rem;
+    padding: 0.313rem;
+    padding-right: 0;
+    padding-bottom: 0.375rem;
+    border-radius: 1.25rem;
+    margin-bottom: 1.625rem;
+    margin-left: 1.063rem;
+    box-shadow: rgba(0, 0, 0, 0.062) 5px 5px 10px;
+    background-color: white;
+  }
+
+  .mostStar {
+    margin-top: 3rem;
+  }
+
+  .carteHebergement {
+    width: 28%;
+    margin-right: auto;
+    margin-left: 1.563rem;
+    margin-bottom: 1.875rem;
+    background-color: white;
+    border: transparent;
+    padding-bottom: 1%;
+    box-shadow: rgba(0, 0, 0, 0.062) 0.313rem 0.313rem 0.625rem;
+  }
+
+  .buttonMore {
+    background-color: #f2f2f2;
+    height: auto;
+  }
+
+  .carteContainerDesktop {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .buttonMore {
+    margin: 3% 4%;
+  }
+
+  .carteContainerFooter {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(20, 25px);
+    column-gap: 30px;
+  }
+
+  #port {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: span 20;
+    height: auto;
+    margin: 0;
+  }
+
+  #carteImagePort {
+    height: 89%;
+  }
+
+  .carte {
+    width: 100%;
+  }
+
+  #fort {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: span 12;
+    height: auto;
+    margin: 0;
+  }
+
+  #frioul {
+    grid-column-start: 2;
+    grid-row-start: 15;
+    grid-row-end: 21;
+    height: auto;
+    margin: 0;
+  }
+
+  #carteImageFrioul {
+    height: 63%;
+  }
+
+  #calanques {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 21;
+    height: auto;
+    margin: 0;
+  }
+
+  #carteImageCalanques {
+    height: 89%;
+  }
+
+  #notreDame {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 10;
+    height: auto;
+    margin: 0;
+  }
+
+  #parc {
+    grid-column-start: 4;
+    grid-row-start: 12;
+    grid-row-end: 21;
+    height: auto;
+    margin: 0;
+  }
+
+  #carteImageParc {
+    height: 76%;
+  }
+
+  #activites {
+    padding: 0;
+  }
+
+  #carteImageFort {
+    height: 82%;
+  }
+
+  #carteImageNotreDame {
+    height: 75%;
+  }
+
+  .titleActivity {
+    margin: 4%;
+  }
+
+  #port + .carte {
+    width: 100%;
+  }
+
+  .carte + .carteTab {
+    width: 100%;
+  }
+
+  .footerDesktop {
+    margin-top: 5%;
+  }
+
+  .footerInner {
+    display: flex;
+    padding: 2% 2% 1%;
+  }
+
+  .footerSection {
+    width: 33%;
+  }
 }
