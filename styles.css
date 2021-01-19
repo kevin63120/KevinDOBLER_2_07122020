@@ -196,7 +196,7 @@ button {
 }
 
 .filterLogo {
-  position: relative;
+  position: absolute;
   background-color: #deebff;
   border-radius: 50%;
   color: #0065fc;
@@ -207,7 +207,7 @@ button {
 
 .filtreTxt {
   margin-right: 0.625rem;
-  margin-left: inherit;
+  margin-left: 3rem;
   font-family: "Raleway";
   font-weight: 800;
   text-align: center;
@@ -235,6 +235,7 @@ header p {
 .labelFiltre {
   display: flex;
   align-items: center;
+  position: relative;
   padding: 0;
   height: 40px;
   margin-bottom: 0.625rem;
@@ -245,6 +246,7 @@ header p {
   border-left: none;
   font-weight: bold;
   border-radius: 3.125rem;
+  transition-duration: 0.5s;
 }
 
 .navDesktop a:hover {
@@ -282,9 +284,8 @@ header p {
 }
 
 .labelFiltre:hover {
-  animation-name: slide;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+  color: cornsilk;
+  background-color:#0065fc ;
 }
 
 @keyframes slide {
@@ -724,12 +725,7 @@ footer {
     margin-left: 0;
   }
 
-  .navDesktop {
-    /*display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    height: 6.25rem;*/
-  }
+  
 
   .navDesktop2 {
     display: flex;
